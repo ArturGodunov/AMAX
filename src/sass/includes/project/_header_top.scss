@@ -1,0 +1,112 @@
+/*
+** HEADER TOP
+*/
+.header_top{
+  height: 87px;
+  .wrapper{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .btn{
+    margin-top: -4px;
+  }
+}
+
+/* LOGO */
+.logo{
+  display: flex;
+  float: left;
+}
+
+.logo_title{
+  font-family: opensans_extrabold, sans-serif;
+  font-size: 26px;
+  color: $orangeColor;
+  text-transform: uppercase;
+}
+
+.logo_text{
+  font-family: roboto_slab_bold, sans-serif;
+  font-size: 14px;
+  margin: auto 6px;
+  padding-left: 6px;
+  border-left: 1px solid $colorText;
+  line-height: 1.4;
+}
+/* END LOGO */
+
+
+/* NAVIGATION */
+.nav{
+  display: inline-block;
+}
+
+.nav_hamburger{
+
+}
+
+.nav_list{
+
+}
+
+.nav_item{
+  float: left;
+  margin-left: 20px;
+}
+
+.nav_link{
+  font-size: 14px;
+  line-height: 1.9;
+}
+/* END NAVIGATION */
+
+
+/* PHONE TABS*/
+.header_phone_tabs{
+  float: left;
+  position: relative;
+  margin: 8px 20px 0 0;
+}
+
+.header_phone_tab_link_block{
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 5px);
+}
+
+.header_phone_tab_link{
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #a4a4a4;
+  border-bottom: 1px solid #a4a4a4;
+  transition: .3s;
+  cursor: pointer;
+  &.active,
+  &:hover{
+    color: $colorText;
+    border-color: $orangeColor;
+    &:before{
+      display: block;
+    }
+  }
+  & + .header_phone_tab_link{
+    margin-left: 5px;
+  }
+}
+
+.header_phone_tab{
+  display: none;
+  font-size: 14px;
+  font-family: roboto_bold, sans-serif;
+  color: $orangeColor;
+  &.active{
+    display: block;
+    animation: fadeIn .6s;
+  }
+}
+/* END PHONE TABS*/
+/*
+** END HEADER TOP
+*/

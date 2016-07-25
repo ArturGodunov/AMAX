@@ -6,16 +6,55 @@ html(lang='ru')
     include includes/blocks/head
 
     body
-        .wrapper
+        header.header
+            .header_top
+                .wrapper.clr
+                    a.logo(href='/' title='Amax - digital agency')
+                        span.logo_title Amax
+                        span.logo_text Digital agency
 
-            header.header
+                    nav.nav
+                        .nav_hamburger
+                        ul.nav_list.clr
+                            - navList = ['Контекстная реклама', 'Продвижение сайтов', 'Реклама в социальных сетях', 'Копирайтинг']
+                            each item in navList
+                                li.nav_item
+                                    a.nav_link(href='')= item
 
-            block content
+                    .pull_right
+                        .header_phone_tabs(data-tab-wrap)
+                            .header_phone_tab_link_block
+                                .header_phone_tab_link.active(data-tab-link='1') Минск
+                                .header_phone_tab_link(data-tab-link='2') Москва
+                            .header_phone_tab.active(data-tab-body='1') +375 29 444-55-66
+                            .header_phone_tab(data-tab-body='2') +375 77 444-55-66
+
+                        .btn Заказать звонок
+
+            .header_main
+                .wrapper
+                    .header_main_text_block
+                        .header_main_text_shadow.
+                            <strong>Контекстная реклама</strong> сегодня является одним из самых эффективных,
+                            быстрых и понятных способов привлечения клиентов.
+                            При этом работает она вполне просто: потенциальному клиенту достаточно ввести
+                            тематический запрос в строке поиска, и реклама вашего сайта/услуги/товара возникнет
+                            на первой странице поисковых систем и сайтах схожей тематики.
+                        .header_main_text_shadow.header_main_text_shadow__cost От 1 000 000 бел.руб.
+                        .btn.btn__md ЗАКАЗАТЬ
 
 
-            section.application
-
-            footer.footer
+        block content
 
 
-        include includes/blocks/scripts
+        section.application
+
+        footer.footer
+            .wrapper
+                .footer_main
+
+
+                .footer_copyright ООО “Юнистокер” 2006-2016 – digital agency. Реклама в интернете, УНП 192559904
+
+
+    include includes/blocks/scripts

@@ -78,6 +78,7 @@ input[type=password],
 select, option,
 textarea,
 a {
+  color: inherit;
   outline: none;
   border: none;
   text-decoration: none;
@@ -159,21 +160,23 @@ textarea {
 }
 @font-face {
   font-family: 'roboto_slab_bold';
-  src: url("robotoslab-bold-webfont.eot");
-  src: url("robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-bold-webfont.woff2") format("woff2"), url("robotoslab-bold-webfont.woff") format("woff"), url("robotoslab-bold-webfont.ttf") format("truetype"), url("robotoslab-bold-webfont.svg#roboto_slab_bold") format("svg");
+  src: url("../fonts/robotoslab-bold-webfont.eot");
+  src: url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.woff2") format("woff2"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.svg#roboto_slab_bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'opensans_extrabold';
-  src: url("opensans-extrabold-webfont.eot");
-  src: url("opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("opensans-extrabold-webfont.woff2") format("woff2"), url("opensans-extrabold-webfont.woff") format("woff"), url("opensans-extrabold-webfont.ttf") format("truetype"), url("opensans-extrabold-webfont.svg#opensans_extrabold") format("svg");
+  src: url("../fonts/opensans-extrabold-webfont.eot");
+  src: url("../fonts/opensans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabold-webfont.woff") format("woff"), url("../fonts/opensans-extrabold-webfont.ttf") format("truetype"), url("../fonts/opensans-extrabold-webfont.svg#opensans_extrabold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /*
 ** END FONTS
 */
+/* COLOR */
+/* GRID */
 /*
 ** COMMON
 */
@@ -187,6 +190,12 @@ body {
   background: #fff;
   color: #111;
   min-height: 100%;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .clr::before, .clr::after {
@@ -205,6 +214,57 @@ body {
   float: right;
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 15px;
+  font-size: 12px;
+  font-family: roboto_bold, sans-serif;
+  color: #fff;
+  border-radius: 4px;
+  background: #fc4158;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn:hover {
+  background: #d52b43;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn.btn__md {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+a:not(.logo) {
+  transition: .3s;
+  position: relative;
+}
+a:not(.logo):before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  height: 1px;
+  width: 0;
+  background: #f95f00;
+  transition: .3s;
+}
+a:not(.logo).active, a:not(.logo):hover {
+  color: #f95f00;
+}
+a:not(.logo).active:before, a:not(.logo):hover:before {
+  left: 0;
+  width: 100%;
+}
+
 /*
 ** END COMMON
 */
@@ -214,10 +274,165 @@ body {
 *
 *****************************************************************************/
 /*
+** ANIMATION
+*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+** END ANIMATION
+*/
+/*
 ** HEADER
 */
 /*
 ** END HEADER
+*/
+/*
+** HEADER TOP
+*/
+.header_top {
+  height: 87px;
+}
+.header_top .wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_top .btn {
+  margin-top: -4px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  float: left;
+}
+
+.logo_title {
+  font-family: opensans_extrabold, sans-serif;
+  font-size: 26px;
+  color: #f95f00;
+  text-transform: uppercase;
+}
+
+.logo_text {
+  font-family: roboto_slab_bold, sans-serif;
+  font-size: 14px;
+  margin: auto 6px;
+  padding-left: 6px;
+  border-left: 1px solid #111;
+  line-height: 1.4;
+}
+
+/* END LOGO */
+/* NAVIGATION */
+.nav {
+  display: inline-block;
+}
+
+.nav_item {
+  float: left;
+  margin-left: 20px;
+}
+
+.nav_link {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* END NAVIGATION */
+/* PHONE TABS*/
+.header_phone_tabs {
+  float: left;
+  position: relative;
+  margin: 8px 20px 0 0;
+}
+
+.header_phone_tab_link_block {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 5px);
+}
+
+.header_phone_tab_link {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #a4a4a4;
+  border-bottom: 1px solid #a4a4a4;
+  transition: .3s;
+  cursor: pointer;
+}
+.header_phone_tab_link.active, .header_phone_tab_link:hover {
+  color: #111;
+  border-color: #f95f00;
+}
+.header_phone_tab_link.active:before, .header_phone_tab_link:hover:before {
+  display: block;
+}
+.header_phone_tab_link + .header_phone_tab_link {
+  margin-left: 5px;
+}
+
+.header_phone_tab {
+  display: none;
+  font-size: 14px;
+  font-family: roboto_bold, sans-serif;
+  color: #f95f00;
+}
+.header_phone_tab.active {
+  display: block;
+  animation: fadeIn .6s;
+}
+
+/* END PHONE TABS*/
+/*
+** END HEADER TOP
+*/
+/*
+** HEADER MAIN
+*/
+.header_main {
+  height: 450px;
+  background: url("../images/bg/bg_main_header.jpg") no-repeat 50%;
+  background-size: cover;
+}
+.header_main .wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.header_main_text_block {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  max-width: 530px;
+}
+
+.header_main_text_shadow {
+  font-size: 17px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.71;
+}
+.header_main_text_shadow strong {
+  font-family: roboto_bold, sans-serif;
+}
+.header_main_text_shadow.header_main_text_shadow__cost {
+  font-family: roboto_bold, sans-serif;
+  font-size: 21px;
+  margin: 10px 0;
+}
+
+/*
+** END HEADER MAIN
 */
 /*****************************************************************************
 *

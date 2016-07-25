@@ -1,0 +1,40 @@
+/*
+** HEADER MAIN
+*/
+.header_main{
+  height: 450px;
+  background: url("../images/bg/bg_main_header.jpg")no-repeat 50%;
+  background-size: cover;
+  .wrapper{
+    position: relative;
+    height: 100%;
+  }
+}
+
+.header_main_text_block{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  max-width: 530px;
+}
+
+.header_main_text_shadow{
+  font-size: 17px;
+  color: $whiteColor;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.71;
+  strong{
+    font-family: roboto_bold, sans-serif;
+  }
+  &.header_main_text_shadow__cost{
+    font-family: roboto_bold, sans-serif;
+    font-size: 21px;
+    margin: 10px 0;
+  }
+}
+
+
+/*
+** END HEADER MAIN
+*/

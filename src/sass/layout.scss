@@ -13,6 +13,7 @@
 *****************************************************************************/
 @import "includes/base/fonts";
 @import "includes/base/vars";
+@import "includes/project/common/mixins";
 @import "includes/base/base";
 
 
@@ -21,7 +22,11 @@
 *                                   PROJECT
 *
 *****************************************************************************/
+@import "includes/project/common/animation";
+
 @import "includes/project/header";
+@import "includes/project/header_top";
+@import "includes/project/header_main";
 
 
 
