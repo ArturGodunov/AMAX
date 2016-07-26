@@ -1,0 +1,21 @@
+section.application
+    .wrapper.clr
+        .application_title ФОРМА ЗАЯВКИ
+        .application_text наши менеджеры свяжутся с Вами в течении рабочео дня
+        .col_6
+            input.input(type='text' placeholder='Ваше имя' name='name')
+            input.input(type='text' placeholder='Контактный телефон' name='phone')
+            input.input(type='text' placeholder='Email' name='email')
+            input.input.m_b_xl(type='text' placeholder='Адрес вашего сайта (если есть)' name='address')
+
+            each item, index in ['Реклама в интернете (контекстная реклама)','Продвижение сайта в поисковиках (СЕО)','Реклама в социальных сетях','Продвижение мобильных приложений','Разработка сайта']
+                label.label= item
+                    input.checkbox(type='checkbox' name='checkbox-#{index}')
+                    span.checkbox_img
+        .col_6
+            textarea.textarea.m_b_xl(placeholder='Ваши возможные пожелания' name='suggestions')
+            each item, index in ['Разработка мобильного приложения','Разработка ПО','Анализ Вашего сайта/приложения/ПО','Ничего не знаю, хочу чтобы меня видели в интернете','Работаю с другим агентством, ничего не работает']
+                label.label= item
+                    input.checkbox(type='checkbox' name='checkbox-#{index}')
+                    span.checkbox_img
+        .btn.btn__bg ОТПРАВИТЬ

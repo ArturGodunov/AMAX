@@ -38,17 +38,31 @@ body{
 }
 
 .title{
-  text-transform: uppercase;
-  &.title__second{
-
+  font-size: 30px;
+  font-family: roboto_bold, sans-serif;
+  text-align: center;
+  margin: 1.6em 0 1.4em;
+  &.title__red{
+    color: #ff3434;
+    text-transform: uppercase;
   }
-
-  &.title__third{
-
+  &.title__orange{
+    color: #f95f00;
   }
-
-  &.title__fourth{
-
+  &.title__graph{
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-left: 15px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABj1BMVEUDAgLe3t7f39/d3d3a2trY2NjW1tbU1NTV1dXS0tLOzs7MzMzKysrJycnGxsbHx8fCwsLDw8O+vr6/v7+8vLy6urq7u7u2tra0tLS1tbWzs7OxsbGvr6+wsLCtra2qqqqoqKilpaWgoKCfn5+bm5uYmJiXl5eVlZWRkZGOjo6Pj4+MjIyNjY2Li4uGhoaFhYWCgoKDg4OBgYF9fX15eXl2dnZ3d3d0dHR1dXVzc3NtbW1ubm5oaGhiYmJeXl5dXV1XV1dZWVlWVlZUVFRRUVFPT09NTU1MTExJSUlKSkpERERFRUVCQkJAQEBBQUE9PT05OTk7Ozs3Nzc4ODg1NTU0NDQxMTEyMjIwMDAtLS0rKyspKSkmJiYhISEgICAcHBweHh4bGxsZGRkWFhYXFxcTExMUFBQSEhIMDAwNDQ0HBwcJCQkGBgYFBQUEBAQEBAQCAgIDAwMCAgIBAQEAAAAAAAACAgIEBAQGBgYODg4XFxcpKSktLS0wMDBOTk5QUFBSUlK+vr7d3d3g4OD///8ilMTRAAAAdXRSTlMAAgIEBggKDAwOEhQWGBoaHh4iIiQmJiosLC4wMjI0ODo8QEJGSEpMUFJSVFRWWlxeXmBkaGpqbGxucnJ4foGDh4eJi42PkZOVlZmZm52doaOjpaWnqaurra+xs7W5u729v8HDw8XFx8vLz8/R09XX2dnb3d+DvddqAAABkUlEQVR42t3TZ1PCQBAG4MUuYkGwIlYQrCgq2HuvYO8VG4qg3Nm7/nC5bGLCaC5+9p1hZrP7ZIbNJcBNwlu9DjSIyd41uR2iGzxULRBMDQ/2ECollAC8TH3LEeBnXXSklO9SV0QY4DvHGRXTyWPp40Ry0WyOcwURXcd+y+qsfJPgFhOGOULr1JjFh4yGGgBgP6JyfJXzIiPTenZt7sV+odVqlpXBsyuxYwcokhkgsZ4fL4ra16JUTLgb4jKMd3sBbKtB+WyvhjIgPgviBApkRS8Gfj44vwSfJEV2PGkKUOV02lOUsIIIKtBnAWW2WDtoUkBw7++NN+VCfBrxDw0r4O/pwOmMJvTidFYV1no72sr+ABcJW6xFE+bhCkeasAR7J5rQir1TVegaGOxv/QMcElZY0oYhPGuDFkwMY5mjBXU3WBr/A5S3lo9Qfh99MoRzfI56yCdCdQDgxukYwCRWLwx2EuZG2ZckVG6A5EM2vSwGKImw6v4DWGy39LpZqNopvStjRdIzpY9ZrDI+UPr6/vkFH9lXoX1YLkEAAAAASUVORK5CYII=")no-repeat 50%;
+      background-size: contain;
+    }
+  }
+  &.title__bg{
+    font-size: 35px;
+    text-transform: uppercase;
   }
 }
 
@@ -78,16 +92,52 @@ a:not(.logo){
     padding-top: 14px;
     padding-bottom: 14px;
   }
+  &.btn__lg{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+  }
   &.btn__bg{
     font-size: 22px;
     text-transform: uppercase;
     padding: 18px 30px;
   }
+  &.btn__xl{
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+  }
+  &.btn__lower{
+    text-transform: none;
+  }
 }
 
-.col_6{
+.col_4,
+.col_6 {
   float: left;
+}
+.col_4 {
+  width: 33.33%;
+}
+.col_6 {
   width: 50%;
+}
+
+
+.panel{
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 20px;
+  font-family: roboto_bold, sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ff3434;
+  .small{
+    text-transform: lowercase;
+  }
 }
 /*
 ** END COMMON

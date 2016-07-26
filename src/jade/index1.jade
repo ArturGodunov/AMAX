@@ -6,109 +6,85 @@ html(lang='ru')
     include includes/blocks/head
 
     body
-        header.header
-            .header_top
-                .wrapper.clr
-                    a.logo(href='/' title='Amax - digital agency')
-                        span.logo_title Amax
-                        span.logo_text Digital agency
-
-                    nav.nav
-                        .nav_hamburger
-                        ul.nav_list.clr
-                            - navList = ['Контекстная реклама', 'Продвижение сайтов', 'Реклама в социальных сетях', 'Копирайтинг']
-                            each item in navList
-                                li.nav_item
-                                    a.nav_link(href='')= item
-
-                    .pull_right
-                        .header_phone_tabs(data-tab-wrap)
-                            .header_phone_tab_link_block
-                                .header_phone_tab_link.active(data-tab-link='1') Минск
-                                .header_phone_tab_link(data-tab-link='2') Москва
-                            .header_phone_tab.active(data-tab-body='1') +375 29 444-55-66
-                            .header_phone_tab(data-tab-body='2') +375 77 444-55-66
-
-                        .btn Заказать звонок
-
-            .header_main
-                .wrapper
-                    .header_main_text_block
-                        .header_main_text_shadow.
-                            <strong>Контекстная реклама</strong> сегодня является одним из самых эффективных,
-                            быстрых и понятных способов привлечения клиентов.
-                            При этом работает она вполне просто: потенциальному клиенту достаточно ввести
-                            тематический запрос в строке поиска, и реклама вашего сайта/услуги/товара возникнет
-                            на первой странице поисковых систем и сайтах схожей тематики.
-                        .header_main_text_shadow.header_main_text_shadow__cost От 1 000 000 бел.руб.
-                        .btn.btn__md ЗАКАЗАТЬ
+        include includes/blocks/header
 
         block content
-
-        section.application
-            .wrapper.clr
-                .application_title ФОРМА ЗАЯВКИ
-                .application_text наши менеджеры свяжутся с Вами в течении рабочео дня
-                .col_6
-                    input.input(type='text' placeholder='Ваше имя' name='name')
-                    input.input(type='text' placeholder='Контактный телефон' name='phone')
-                    input.input(type='text' placeholder='Email' name='email')
-                    input.input.m_b_xl(type='text' placeholder='Адрес вашего сайта (если есть)' name='address')
-
-                    - checkbox1 = ['Реклама в интернете (контекстная реклама)','Продвижение сайта в поисковиках (СЕО)','Реклама в социальных сетях','Продвижение мобильных приложений','Разработка сайта']
-                    each item, index in checkbox1
-                        label.label= item
-                            input.checkbox(type='checkbox' name='checkbox-#{index}')
-                            span.checkbox_img
-                .col_6
-                    textarea.textarea.m_b_xl(placeholder='Ваши возможные пожелания' name='suggestions')
-                    - checkbox1 = ['Разработка мобильного приложения','Разработка ПО','Анализ Вашего сайта/приложения/ПО','Ничего не знаю, хочу чтобы меня видели в интернете','Работаю с другим агентством, ничего не работает']
-                    each item, index in checkbox1
-                        label.label= item
-                            input.checkbox(type='checkbox' name='checkbox-#{index}')
-                            span.checkbox_img
-                .btn.btn__bg ОТПРАВИТЬ
-
-        footer.footer
-            .footer_main
-                .wrapper.clr
-                    .col_6
-                        .footer_title НАШИ УСЛУГИ
-                        .col_6
-                            ul.footer_list
-                                - footerList1 = ['Контекстная реклама','Продвижение сайтов','Копирайтинг','Реклама в социальных сетях']
-                                each item in footerList1
-                                    li.footer_item
-                                        a.footer_link(href='')= item
-                        .col_6
-                            ul.footer_list
-                                - footerList1 = ['Реклама в Instagram','Реклама в Facebook','Реклама в Вконтакте','Реклама в Одноклассниках']
-                                each item in footerList1
-                                    li.footer_item
-                                        a.footer_link(href='')= item
-                    .col_6
-                        .footer_title НАШИ КОНТАКТЫ
-                        .col_6
-                            strong Наш офис в Минске:
-                            p ул.Бирюзова 10А, 2-йэтаж, каб. 11
-                            p 220073, тел: <a class='footer_text_orange' href='tel:+375 29 196 50 60'><strong>+375 29 196 50 60</strong></a>
-                            p
-                                a.footer_link(href='amax.by') amax.by
-                            p
-                                a.footer_link(href='mail@amax.by') mail@amax.by
-                        .col_6
-                            p
-                                strong Наш офис в Москве:
-                            p ул.Дружбы 10Б, 119330
-                            p тел: <a class='footer_text_orange' href='tel:+7 926 196 50 60'><strong>+7 926 196 50 60</strong></a>
-                            p
-                                a.footer_link(href='mailto:amax.partners') amax.partners
-                            p
-                                a.footer_link(href='mail@amax-digital.ru') mail@amax-digital.ru
-
-            .footer_copyright
+            section.top_lider
                 .wrapper
-                    p ООО “Юнистокер” 2006-2016 – digital agency. Реклама в интернете, УНП 192559904
+                    h2.title.title__red МЫ ВЫВОДИМ В ТОП ЛИДЕРОВ РЫНКА
+                    ul.top_lider_list
+                        - for(var i=1; i<5; i++)
+                            li.top_lider_item
+                                img.top_lider_img(src='images/main/lider_logo_#{i}.png')
+
+            section.context_market
+                .wrapper.clr
+                    h2.title.title__orange.title__graph Контекстная реклама Яндекс.Директ и Google AdWords
+                    .col_6
+                        ul.context_market_list
+                            each item in ['рост посещаемости Вашего сайта/магазина в 10 раз за 1 день','увеличение Ваших продаж не отходя от компьютера','реклама направленная конкретно на вашего потенциального клиента','запуск рекламной кампании за 2 часа','возможность настройки приследования Вашего потенциального клиента до момента совершения им покупки','возможность оперативного внесения корректировок','снижение стоимости привлечения клиента до 80%','возможность самостоятельно устанавливать бюджет']
+                                li.context_market_item= item
+                    .col_6
+                        .context_market_img
+                        .btn.btn__lg ЗАКАЗАТЬ
+
+            section.seo_topic
+                .wrapper.clr
+                    .panel ХОТИТЕ БЫТЬ В ТОПЕ  В ПОИСКОВИКАХ GOOGLE <span class='small'>и</span> YANDEX?
+                    h2.title.title__orange SEO продвижение сайта от AMAX digital это
+                    .col_6
+                        ul.seo_topic_list
+                            each item in ['вывод сайта в топ 3 выдачи поисковых систем','рост целевого трафика','привлечение новых клиентов','увеличение продаж','представление компании в глобальной сети','1000 довольных клиентов','увеличение продаж на 30% в течении 3х месяцев']
+                                li.seo_topic_item= item
+                        .text_canter
+                            .btn.btn__lg ЗАКАЗАТЬ
+                    .col_6
+                        .seo_topic_img
+
+            section.social_market
+                .wrapper.clr
+                    h2.title.title__bg РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ
+                    ul.social_market_list.clr
+                        each item in [['instagram','5 млн чел в день<br>от 1 500 000 бел.руб'],['vkontakte','2 млн чел в день<br>от 2 000 000 бел.руб'],['facebook','2 млн чел в день<br>от 2 000 000 бел.руб'],['odnoklassniki','2 млн чел в день<br>от 2 000 000 бел.руб']]
+                            li.social_market_item_wrap
+                                .social_market_item(class='social_market_item__#{item[0]}')
+                                    .social_market_item_title= item[0]
+                                    .social_market_item_text !{item[1]}
+                                    .btn.btn__md.btn__lower Подробнее
+                    .social_market_text.text_canter ОБЩЕЕ КОЛИЧЕСТВО ВАШИХ ПОТЕНЦИАЛЬНЫХ КЛИЕНТОВ В СОЦСЕТЯХ – <span class='small'>более 2 000 000 000 чел.</span>
+                    .col_6
+                        .social_market_text РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ <span class='small'>от</span> AMAX <span class='small'>digital это</span>
+                        ul.social_market_text_list
+                            each item in ['Гибкие настройки таргетинга: пол, возраст, страна, хобби, интересы, семейное положение','Возможность привлекать клиента не имея собственного сайта','Минимальные расходы на привлечения клиента']
+                                li.social_market_text_item= item
+                    .col_6.text_canter
+                        .btn.btn__xl БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+
+            section.amax_is
+                //.amax_is_title AMAX <span class='small'>ЭТО</span>
+                //each item in ['10 лет кропотливой работы в интернет-маркетинге','Уникальные методы по продвижению и представлению Вашего бизнеса','Нестандартные подходы с правильными и успешными решениями','Более 80 разработанных онлайн-сервисов','Более 70 высококвалифицированных сертифицированных специалестов. Наши сотрудники – мастера своего дела.','Более 1000 эффективных рекламных кампаний в интернете']
+                //    .amax_is_item= item
+
+            section.specialist
+                .wrapper
+                    .title.title__bg НАШИ СОТРУДНИКИ СЕРТИФИЦИРВАНЫЕ СПЕЦАЛИСТЫ
+                    each item, index in ['БОЛЕЕ 2000 РЕКЛИЗОВАННЫХ ПРОЕКТОВ','ТОПОВЫЕ ПОЗИЦИИ КЛИЕНТОВ НА РЫНКЕ','ПОСЛЕДНИЕ ТЕНДЕНЦИИ']
+                        .col_4
+                            .specialist_text(class='specialist_text__#{index+1}')= item
+                    .clr
+                    ul.specialist_list
+                        - for(var i=1; i<5; i++)
+                            li.specialist_item
+                                img.specialist_img(src='images/main/sertificat_#{i}.png')
+
+
+
+
+
+
+        include includes/blocks/application
+
+        include includes/blocks/footer
 
 
     include includes/blocks/scripts

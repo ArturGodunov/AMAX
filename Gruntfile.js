@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				files: [
                     'src/sass/**/*.scss'
                 ],
-				tasks: ['sass:dist'],
+				tasks: ['sass:dist', 'autoprefixer:dist'],
 				options: {
 					spawn: false
 				}

@@ -1,0 +1,38 @@
+footer.footer
+    .footer_main
+        .wrapper.clr
+            .col_6
+                .footer_title НАШИ УСЛУГИ
+                .col_6
+                    ul.footer_list
+                        each item in ['Контекстная реклама','Продвижение сайтов','Копирайтинг','Реклама в социальных сетях']
+                            li.footer_item
+                                a.footer_link(href='')= item
+                .col_6
+                    ul.footer_list
+                        each item in ['Реклама в Instagram','Реклама в Facebook','Реклама в Вконтакте','Реклама в Одноклассниках']
+                            li.footer_item
+                                a.footer_link(href='')= item
+            .col_6
+                .footer_title НАШИ КОНТАКТЫ
+                .col_6
+                    strong Наш офис в Минске:
+                    p ул.Бирюзова 10А, 2-йэтаж, каб. 11
+                    p 220073, тел: <a class='footer_text_orange' href='tel:+375 29 196 50 60'><strong>+375 29 196 50 60</strong></a>
+                    p
+                        a.footer_link(href='amax.by') amax.by
+                    p
+                        a.footer_link(href='mail@amax.by') mail@amax.by
+                .col_6
+                    p
+                        strong Наш офис в Москве:
+                    p ул.Дружбы 10Б, 119330
+                    p тел: <a class='footer_text_orange' href='tel:+7 926 196 50 60'><strong>+7 926 196 50 60</strong></a>
+                    p
+                        a.footer_link(href='mailto:amax.partners') amax.partners
+                    p
+                        a.footer_link(href='mail@amax-digital.ru') mail@amax-digital.ru
+
+    .footer_copyright
+        .wrapper
+            p ООО “Юнистокер” 2006-2016 – digital agency. Реклама в интернете, УНП 192559904
