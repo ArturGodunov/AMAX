@@ -8,13 +8,13 @@ html{
 body{
   font: 20px/1 roboro_regular, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  background: $whiteColor;
-  color: $colorText;
+  background: #fff;
+  color: #111;
   min-height: 100%;
 }
 
 .wrapper{
-  max-width: $widthWrapper;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -37,30 +37,6 @@ body{
   float: right;
 }
 
-.btn{
-  display: inline-block;
-  padding: 12px 15px;
-  font-size: 12px;
-  font-family: roboto_bold, sans-serif;
-  color: $whiteColor;
-  border-radius: 4px;
-  background: $lightRedColor;
-  cursor: pointer;
-  transition: .3s;
-  &:hover{
-    background: $darkRedColor;
-  }
-  &:active{
-    transform: scale(0.95);
-  }
-  &.btn__md{
-    font-size: 16px;
-    text-transform: uppercase;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-}
-
 .title{
   text-transform: uppercase;
   &.title__second{
@@ -77,7 +53,41 @@ body{
 }
 
 a:not(.logo){
-  @include hover_pseudo_border($orangeColor);
+  @include hover_pseudo_border(#f95f00);
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 15px;
+  font-size: 12px;
+  font-family: roboto_bold, sans-serif;
+  color: #fff;
+  border-radius: 4px;
+  background: #fc4158;
+  cursor: pointer;
+  transition: .3s;
+  &:hover{
+    background: #d52b43;
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+  &.btn__md{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  &.btn__bg{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 18px 30px;
+  }
+}
+
+.col_6{
+  float: left;
+  width: 50%;
 }
 /*
 ** END COMMON

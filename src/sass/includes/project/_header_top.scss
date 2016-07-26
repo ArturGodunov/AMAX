@@ -22,7 +22,7 @@
 .logo_title{
   font-family: opensans_extrabold, sans-serif;
   font-size: 26px;
-  color: $orangeColor;
+  color: #f95f00;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@
   font-size: 14px;
   margin: auto 6px;
   padding-left: 6px;
-  border-left: 1px solid $colorText;
+  border-left: 1px solid #111;
   line-height: 1.4;
 }
 /* END LOGO */
@@ -85,8 +85,8 @@
   cursor: pointer;
   &.active,
   &:hover{
-    color: $colorText;
-    border-color: $orangeColor;
+    color: #111;
+    border-color: #f95f00;
     &:before{
       display: block;
     }
@@ -100,7 +100,7 @@
   display: none;
   font-size: 14px;
   font-family: roboto_bold, sans-serif;
-  color: $orangeColor;
+  color: #f95f00;
   &.active{
     display: block;
     animation: fadeIn .6s;

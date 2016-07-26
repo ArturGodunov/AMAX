@@ -1,0 +1,35 @@
+/*
+** APPLICATION
+*/
+.application{
+  background: #f0f0f0;
+  padding: 70px 0 80px;
+  .col_6{
+    &:nth-child(2n+1){
+      padding-right: 15px;
+    }
+    &:nth-child(2n){
+      padding-left: 15px;
+    }
+  }
+  .btn{
+    margin-top: 40px;
+  }
+}
+
+.application_title{
+  font-family: roboto_bold, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.application_text{
+  font-size: 18px;
+  margin-bottom: 2.7em;
+  text-align: center;
+}
+/*
+** END APPLICATION
+*/
