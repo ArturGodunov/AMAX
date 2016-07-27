@@ -1,3 +1,91 @@
 extends index1
 
+block header_main
+    .header_main.header_main__seo
+        .wrapper
+            .header_main_text_block.header_main_text_block__lg
+                h1.title.title__xl SEO ПРОДВИЖЕНИЕ
+                h3.title.title__lg.title__bg_black БУДЬ ПЕРВЫМ В ПОИСКОВЫХ СИСТЕМАХ GOOGLE И ЯНДЕКС
+                .btn.btn__md ЗАКАЗАТЬ
+
 block content
+    section.hit
+        .wrapper.clr
+            .col_8
+                .hit_text Ударьте по своим конкурентам, и наслаждайтесь большими результатами! Наш клиент в среднем получает:
+                ul.hit_list
+                    //each item in ['500% ROI','8х ключевых слов отправки на ваш сайт','250% Увеличение органического трафика']
+                    //    li.hit_item= item
+                    li.hit_item.hit_item__1
+                    li.hit_item.hit_item__2
+                    li.hit_item.hit_item__3
+            .col_4
+                form.hit_form
+                    .hit_form_title ЗАКАЗАТЬ ЗВОНОК
+                    input.input.input__light(type='text' placeholder='Ваше имя' name='name')
+                    input.input.input__light(type='text' placeholder='Контактный телефон' name='phone')
+                    button.btn.btn__lg(type='submit') ОТПРАВИТЬ
+
+    section.seo_for
+
+    section.packets
+        .wrapper
+            .title.text_upper Пакеты
+            ul.packets_list
+                each item, index in [['Стартовый','Молодые сайты<br>От 100 000 тыс руб в месяц'],['Эконом','Корпоративные сайты малого бизнеса и стартапов<br>От 3 000 000 млн руб в месяй'],['Премиум','Комплексное решение для развития сайта компании<br>От 7 000 000 млн руб в месяц']]
+                    li.packets_item(class='packets_item__#{index + 1}')
+                        .packets_item_title= item[0]
+                        .packets_item_text !{item[1]}
+                        .btn.btn__md.btn__lower Подробнее
+
+    section.rate
+        .wrapper
+            .rate_table
+                .rate_row
+                    each item in ['ТАРИФЫ','ОТ 100 000 тыс руб','ОТ 3 000 000 млн','ОТ 7 000 000 млн']
+                        .rate_col= item
+                .rate_row
+                    each item, index in ['Подбор ключевых фраз','yes','yes','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                .rate_row
+                    each item, index in ['Внутренняя оптимизация (метаданные)','yes','yes','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                .rate_row
+                    each item, index in ['Техническая оптимизация','yes','yes','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                .rate_row
+                    each item, index in ['Управление репутацией','no','no','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                .rate_row
+                    each item, index in ['Оптимизация контента','no','no','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                .rate_row
+                    each item, index in ['Комплексное продвижение','no','no','yes']
+                        if (index == 0)
+                            .rate_col= item
+                        else
+                            .rate_col(class='rate_col__#{item}')
+                                .rate_btn_wrap
+                                    .btn.btn__lg ЗАКАЗАТЬ
+
+    section.target
+        .wrapper.clr
+            .title.title__sm ВАШ БИЗНЕС ИМЕЕТ ЦЕЛИ, МЫ ПОМОЖЕМ ИХ ВАМ ДОСТИЧЬ.
+            .target_text УВЕЛИЧЕНИЕ ТРАФИКА, УЛУЧШЕНИЕ РЕЙТИНГА В ПОИСКОВЫХ СИСТЕМАХ, ВЫСОКИЕ ПОКАЗАТЕЛИ КОЭФФИЦИЕНТА КОНВЕРСИИ. НАША КОМАНДА ИМЕЕТ БОЛЬШОЙ ОПЫТ И НЕОБХОДИМЫЕ ИНСТРУМЕНТЫ , ЧТОБЫ СДЕЛАТЬ ЭТО ДЛЯ ВАС.
+            .btn.btn__lg НАЧАТЬ СЕЙЧАС
+

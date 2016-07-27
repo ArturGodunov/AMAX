@@ -49,6 +49,9 @@ body{
   &.title__orange{
     color: #f95f00;
   }
+  &.title__white{
+    color: #fff;
+  }
   &.title__graph{
     &:after{
       content: '';
@@ -60,9 +63,30 @@ body{
       background-size: contain;
     }
   }
+  &.title__bg_black{
+    color: #fff;
+    background: rgba(17, 17, 17, 0.84);
+    line-height: 1.4;
+    padding: 0 0.2em;
+  }
+  &.title__sm{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 3.5em;
+  }
   &.title__bg{
     font-size: 35px;
     text-transform: uppercase;
+  }
+  &.title__lg{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0 0 0.7em;
+  }
+  &.title__xl{
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -113,14 +137,18 @@ a:not(.logo){
 }
 
 .col_4,
-.col_6 {
+.col_6,
+.col_8{
   float: left;
 }
-.col_4 {
+.col_4{
   width: 33.33%;
 }
-.col_6 {
+.col_6{
   width: 50%;
+}
+.col_8{
+  width: 66.66%;
 }
 
 

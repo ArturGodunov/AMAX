@@ -34,6 +34,19 @@
   & + .input{
     margin-top: 20px;
   }
+  &.input__light{
+    background-color: rgba(221, 221, 221, 0.5);
+    border: 1px solid #dcdcdc !important;
+    &::-webkit-input-placeholder {
+      color: #111;
+    }
+    &::-moz-placeholder {
+      color: #111;
+    }
+    &:-ms-input-placeholder {
+      color: #111;
+    }
+  }
 }
 
 .textarea{

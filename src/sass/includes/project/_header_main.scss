@@ -5,9 +5,15 @@
   height: 450px;
   background: url("../images/bg/bg_main_header.jpg")no-repeat 50%;
   background-size: cover;
+  &.header_main__seo{
+    background-image: url("../images/bg/bg_seo_header.jpg");
+  }
   .wrapper{
     position: relative;
     height: 100%;
+  }
+  .title{
+    text-align: left;
   }
 }
 
@@ -17,6 +23,9 @@
   left: 30px;
   transform: translateY(-50%);
   max-width: 530px;
+  &.header_main_text_block__lg{
+    max-width: 670px;
+  }
 }
 
 .header_main_text_shadow{
