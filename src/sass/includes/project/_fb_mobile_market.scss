@@ -1,0 +1,43 @@
+/*
+** FB MOBILE MARKET
+*/
+.fb_mobile_market{
+  padding-bottom: 80px;
+  .btn{
+    margin-right: auto;
+  }
+}
+
+.fb_mobile_market_wrap{
+  display: flex;
+}
+
+.fb_mobile_market_text_block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.fb_mobile_market_title{
+  font-family: roboto_bold, sans-serif;
+  font-size: 28px;
+  line-height: 1.18;
+  color: #f95f00;
+  margin-bottom: 0.7em;
+}
+
+.fb_mobile_market_text{
+  font-family: roboto_bold, sans-serif;
+  font-size: 23px;
+  line-height: 1.48;
+  margin-bottom: 1.1em;
+}
+
+.fb_mobile_market_img{
+  display: block;
+  width: 30%;
+}
+/*
+** END FB MOBILE MARKET
+*/

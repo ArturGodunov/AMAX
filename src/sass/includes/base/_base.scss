@@ -69,6 +69,20 @@ body{
     line-height: 1.4;
     padding: 0 0.2em;
   }
+  &.title__shadow{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  &.title__m_t_none{
+    margin-top: 0;
+  }
+  &.title__xxs{
+    font-size: 21px;
+    line-height: 1.4;
+    margin-top: 0;
+  }
+  &.title__xs{
+    font-size: 23px;
+  }
   &.title__sm{
     font-size: 25px;
     text-transform: uppercase;
@@ -90,6 +104,26 @@ body{
   }
 }
 
+.title_bg_black_block{
+  color: #fff;
+  background: rgba(17, 17, 17, 0.84);
+  padding: 10px 30px;
+  .btn{
+    position: relative;
+    top: 30px;
+  }
+}
+
+.title_list{
+  margin-top: 1em;
+}
+.title_item{
+  font-family: roboto_light, sans-serif;
+  font-size: 17px;
+  list-style: disc inside;
+  line-height: 1.71;
+}
+
 a:not(.logo){
   @include hover_pseudo_border(#f95f00);
 }
@@ -102,6 +136,7 @@ a:not(.logo){
   color: #fff;
   border-radius: 4px;
   background: #fc4158;
+  vertical-align: top;
   cursor: pointer;
   transition: .3s;
   &:hover{
@@ -163,6 +198,10 @@ a:not(.logo){
   color: #fff;
   text-transform: uppercase;
   background: #ff3434;
+  &.panel__left{
+    position: static;
+    transform: translateX(0);
+  }
   .small{
     text-transform: lowercase;
   }

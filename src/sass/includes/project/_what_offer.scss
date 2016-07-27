@@ -1,0 +1,24 @@
+/*
+** WHAT OFFER
+*/
+.what_offer{
+  padding: 60px 0 80px;
+  .panel{
+    margin-bottom: 1.6em;
+  }
+  p{
+    max-width: 1050px;
+    font-size: 22px;
+    line-height: 1.45;
+    & + p{
+      margin-top: 1.4em;
+    }
+  }
+
+  strong{
+    font-family: roboto_bold, sans-serif;
+  }
+}
+/*
+** END WHAT OFFER
+*/

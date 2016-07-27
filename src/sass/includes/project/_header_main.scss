@@ -8,6 +8,15 @@
   &.header_main__seo{
     background-image: url("../images/bg/bg_seo_header.jpg");
   }
+  &.header_main__copyright{
+    background-image: url("../images/bg/bg_copyright_header.jpg");
+  }
+  &.header_main__odnoklassniki{
+    background-image: url("../images/bg/bg_odnoklassniki_header.jpg");
+  }
+  &.header_main__facebook{
+    background-image: url("../images/bg/bg_facebook_header.jpg");
+  }
   .wrapper{
     position: relative;
     height: 100%;
@@ -23,8 +32,14 @@
   left: 30px;
   transform: translateY(-50%);
   max-width: 530px;
+  &.header_main_text_block__bg{
+    max-width: 630px;
+  }
   &.header_main_text_block__lg{
     max-width: 670px;
+  }
+  &.header_main_text_block__xl{
+    max-width: 760px;
   }
 }
 

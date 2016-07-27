@@ -3,6 +3,9 @@
 */
 .packets{
   padding-bottom: 70px;
+  &.packets__copyright{
+    background: #f5f5f5;
+  }
   .btn{
     width: 114px;
     margin: 0 auto;

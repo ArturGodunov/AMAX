@@ -1,0 +1,25 @@
+/*
+** HALF LISTS
+*/
+.half_lists{
+
+  .col_6{
+    &:last-child{
+      background-color: rgba(255, 43, 0, 0.11);
+    }
+  }
+}
+
+.half_lists_list{
+  max-width: 580px;
+  padding: 60px 40px;
+}
+
+.half_lists_item{
+  font-family: roboto_bold, sans-serif;
+  line-height: 1.4;
+  list-style: disc inside;
+}
+/*
+** END HALF LISTS
+*/
