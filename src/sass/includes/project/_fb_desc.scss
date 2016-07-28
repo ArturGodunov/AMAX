@@ -13,6 +13,21 @@
       padding-left: 15px;
     }
   }
+  .btn{
+    margin-top: 30px;
+  }
+  &.fb_desc__white{
+    background: #fff;
+  }
+  &.fb_desc__arrow{
+    background: url("../images/bg/bg_instagram_1.png")no-repeat 50%;
+    background-size: cover;
+    .col_6{
+      &:last-child{
+        margin-top: 2.5em;
+      }
+    }
+  }
 }
 
 .fb_desc_title_sm{
@@ -39,14 +54,31 @@
   list-style: disc inside;
 }
 
+.fb_desc_text_lg{
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.fb_desc_text_xl{
+  color: #ff2b00;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
 .fb_desc_text_bg{
   font-size: 28px;
   .red{
     color: #ff2b00;
+    text-transform: uppercase;
   }
   & + .fb_desc_text_bg{
     margin-top: 0.8em;
   }
+}
+
+.fb_desc_text_md{
+  font-size: 22px;
+  line-height: 1.64;
 }
 
 .fb_desc_text_sm{

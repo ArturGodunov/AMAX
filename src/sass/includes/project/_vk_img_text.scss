@@ -1,0 +1,74 @@
+/*
+** VK IMG TEXT
+*/
+.vk_img_text{
+  padding: 60px 0;
+  background: #f5f5f5;
+  &.vk_img_text__white{
+    background: #fff;
+  }
+  &.vk_img_text__p_b_none{
+    padding-bottom: 0;
+  }
+}
+
+.vk_img_text_wrap{
+  display: flex;
+}
+
+.vk_img_text_col_half {
+  width: 50%;
+  &:first-child{
+    padding-right: 15px;
+  }
+  &:last-child{
+    padding-left: 15px;
+  }
+}
+
+.vk_img_text_col_bg{
+  width: 55%;
+  .vk_img_text_col_sm + &{
+    padding-left: 25px;
+  }
+}
+
+.vk_img_text_col_sm{
+  width: 45%;
+  .vk_img_text_col_bg + &{
+    padding-left: 25px;
+  }
+}
+
+.vk_img_text_title{
+  font-family: roboto_bold, sans-serif;
+  color: #f95f00;
+  font-size: 28px;
+  margin: 0.5em 0 1em;
+}
+
+.vk_img_text_text{
+  font-family: roboto_bold, sans-serif;
+  font-size: 24px;
+  line-height: 2.54;
+  margin-bottom: 1.4em;
+  &.vk_img_text_text__sm{
+    font-size: 20px;
+    line-height: 2;
+  }
+}
+
+.vk_img_text_list{
+  padding-left: 30px;
+  margin-bottom: 1.6em;
+}
+
+.vk_img_text_item{
+  font-size: 21px;
+  line-height: 1.52;
+  text-transform: uppercase;
+  list-style: disc;
+}
+/*
+** END VK IMG TEXT
+*/

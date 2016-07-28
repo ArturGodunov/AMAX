@@ -1,0 +1,18 @@
+/*
+** SING TEXT
+*/
+.sing_text{
+  padding: 60px 0;
+  text-align: center;
+  p{
+    font-family: roboto_bold, sans-serif;
+    font-size: 28px;
+    line-height: 1.29;
+  }
+  &.sing_text__grey{
+    background: #f5f5f5;
+  }
+}
+/*
+** END SING TEXT
+*/
