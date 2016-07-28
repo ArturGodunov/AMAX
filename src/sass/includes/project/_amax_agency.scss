@@ -1,0 +1,34 @@
+/*
+** AMAX AGENCY
+*/
+.amax_agency{
+  padding-bottom: 80px;
+  text-align: center;
+  .title{
+    color: #ff3434;
+  }
+}
+
+.amax_agency_img{
+
+}
+
+.amax_agency_text{
+  font-family: roboto_bold, sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 1em 0;
+  .red{
+    font-family: roboto_black, sans-serif;
+    font-size: 26px;
+    color: #ff2b00;
+    text-transform: uppercase;
+  }
+  &.amax_agency_text__bg{
+    font-size: 26px;
+    margin-bottom: 1.6em;
+  }
+}
+/*
+** END AMAX AGENCY
+*/

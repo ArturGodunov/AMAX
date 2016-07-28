@@ -1,3 +1,129 @@
 extends index1
 
+block header_main
+    .wrapper.wrapper__sm
+        .header_main.header_main__ad
+            .header_main_text_block.header_main_text_block__xl
+                h1.title.title__xxl.text_white.title__shadow КОНТЕКСТНАЯ РЕКЛАМА
+                img.title_img(src='images/ad/complex.png')
+
 block content
+    section.amax_agency
+        .wrapper
+            .title.title__graph AMAX Digital Agency
+            img.amax_agency_img(src='images/ad/digital_agency.png')
+            .amax_agency_text <span class='red'>КОНТЕКСТНАЯ РЕКЛАМА</span> сегодня является одним из самых эффективных, быстрых и понятных способов привлечения клиентов. При этом работает она вполне просто: потенциальному клиенту достаточно ввести тематический запрос в строке поиска, и реклама вашего сайта/услуги/товара возникнет на первой странице поисковых систем и сайтах схожей тематики.
+            .amax_agency_text.amax_agency_text__bg От 1.000.000 млн бел.руб
+            .btn.btn__lg ПОЛУЧИТЬ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+
+    section.ad_context_market
+        .wrapper.clr
+            .title КОНТЕКСТНАЯ РЕКЛАМА
+            ul.ad_context_market_list
+                each item, index in [['Контекстная реклама в яндекс.директ','От 1.000.00 бел.руб.'],['Контекстная реклама в google adwords','От 3.000.00 бел.руб.'],['Контекстная реклама в яндекс.маркет','От 2.000.00 бел.руб.']]
+                    li.ad_context_market_item
+                        img.ad_context_market_item_img(src='images/ad/context_#{index+1}.png')
+                        .ad_context_market_item_text= item[0]
+                        .ad_context_market_item_cost= item[1]
+
+    section.complex_market
+        .wrapper.clr
+            .title КОМПЛЕКСНЫЕ РЕКЛАМНЫЕ КАМПАНИИ В GOOGLE и YANDEX
+            img.complex_market_img(src='images/ad/complex.png')
+            ul.complex_market_list
+                li.complex_market_item
+                    .complex_market_item_row
+                        .complex_market_item_title START
+                        .complex_market_item_desc ПОДХОДИТ ДЛЯ ПРОДВИЖЕНИЯ ТОВАРОВ И УСЛУГ
+                        .complex_market_item_cost ОТ 20 МЛН. БЕЛ.РУБ. С НДС
+                    .complex_market_item_row Анализ вашего запроса. Настройка GOOGLE ANALYTICS и Яндекс.Метрики
+                    .complex_market_item_row Подбор и настройка с использованием 600 ключевых слов
+                    .complex_market_item_row Яндекс.Директ – 500 обособленных объявлений
+                    .complex_market_item_row Google AdWords - 500 обособленных объявлений
+                    .complex_market_item_row Скидки при долгосрочном сотрудничестве
+                    .complex_market_item_row Персональный менеджер
+                    .complex_market_item_row Сотрудничество по договору
+                    .complex_market_item_row Старт сотрудничества и запуск рекламы за 2 часа
+                    .complex_market_item_row.complex_market_item_row__orange
+                        p Стоимость настройки и управления
+                        p.big 7.900.000 бел.руб. с НДС
+                li.complex_market_item
+                    .complex_market_item_row
+                        .complex_market_item_title PROFESSIONAL
+                        .complex_market_item_desc ДЛЯ ТОРГОВЫХ ПЛОЩАДОК И ИНТЕРНЕТ МАГАЗИНОВ
+                        .complex_market_item_cost ОТ 50 МЛН. БЕЛ.РУБ. С НДС
+                    .complex_market_item_row Анализ вашего запроса. Настройка GOOGLE ANALYTICS и Яндекс.Метрики
+                    .complex_market_item_row Подбор и настройка с использованием 1000 ключевых слов
+                    .complex_market_item_row Яндекс.Директ – до 1000 обособленных объявлений
+                    .complex_market_item_row Google.AdWords – до 1000 обособленных объявлений
+                    .complex_market_item_row РЕМАРКЕТИНГ и РЕТАРГЕТИНГ Яндекс.Директ и Google AdWords
+                    .complex_market_item_row Возможность вносить корректировки в действующую рекламную кампанию
+                    .complex_market_item_row Предоставление промежуточных результатов рекламной кампании
+                    .complex_market_item_row Скидки при долгосрочном сотрудничестве
+                    .complex_market_item_row Персональный менеджер
+                    .complex_market_item_row Сотрудничество по договору
+                    .complex_market_item_row Старт сотрудничества и запуск рекламы за 3 часа
+                    .complex_market_item_row.complex_market_item_row__orange
+                        p Стоимость настройки и управления
+                        p.big 9.900.000 бел.руб. с НДС
+                li.complex_market_item.text_upper
+                    .complex_market_item_row
+                        .complex_market_item_title UNLIM
+                        .complex_market_item_desc ПРОДВИЖЕНИЕ КРУПНЫХ РЕСУРСОВ НА МЕЖДУНАРОДНОМ ПРОСТРАНСТВЕ  / ВЫВОД НА НОВЫЕ РЫНКИ / ПРОДВИЖЕНИЕ САЙТОВ С БОЛЬШИМ КАТАЛОГОМ ТОВАРОВ И УСЛУГ
+                        .complex_market_item_cost ОТ 100 МЛН. БЕЛ.РУБ. С НДС
+                    .complex_market_item_row СТОИМОСТЬ РАСЧИТЫВАЕТСЯ ИНДИВИДУАЛЬНО
+                    .complex_market_item_row ПЕРСОНАЛЬНАЯ ГРУППА РАБОТАЮЩАЯ НАД ПРОЕКТОМ
+                    .complex_market_item_row CПИСОК РАБОТ ФОРМИРУЕТСЯ ИНДИВИДУАЛЬНО
+                    .complex_market_item_row СОТРУДНИЧЕСТВО ПО ДОГОВОРУ
+
+    section.specialist
+        .wrapper
+            .title.title__bg НАШИ СОТРУДНИКИ СЕРТИФИЦИРВАНЫЕ СПЕЦАЛИСТЫ
+            each item, index in ['БОЛЕЕ 2000 РЕКЛИЗОВАННЫХ ПРОЕКТОВ','ТОПОВЫЕ ПОЗИЦИИ КЛИЕНТОВ НА РЫНКЕ','ПОСЛЕДНИЕ ТЕНДЕНЦИИ']
+                .col_4
+                    .specialist_text(class='specialist_text__#{index + 1}')= item
+            .clr
+            ul.specialist_list
+                - for(var i=1; i<5; i++)
+                    li.specialist_item
+                        img.specialist_img(src='images/main/sertificat_#{i}.png')
+
+    section.what_offer.what_offer__grey
+        .wrapper
+            .panel ДЛЯ ПАРТНЕРОВ И ЗАКАЗЧИКОВ
+            .text_center
+                p <strong>1. МГНОВЕННЫЙ РЕЗУЛЬТАТ ОТ ЗАПУСКА РЕКЛАМНОЙ КАМПАНИИ В ИНТЕРНЕТЕ</strong>
+                p <strong>2. ПРИВЛЕЧЕНИЕ ТОЛЬКО ЦЕЛЕВОЙ АУДИТОРИИ ЗАИНТЕРЕВОВАННОЙ</strong>
+                p <strong>3. В ВАШЕМ ТОВАРЕ И УСЛУГЕ</strong>
+                p <strong>4. СНИЖЕНИЕ СТОИМОСТИ ПРИВЛЕЧЕНИЯ КЛИЕНТА ДО -80%</strong>
+                p <strong>5. ВОЗМОЖНОСТЬ ОПЕРАТИВНО ВНОСИТЬ КОРРЕКТИРОВКИ</strong>
+                p <strong>6. ВОЗМОЖНОСТЬ КОНТРОЛИРОВАТЬ И САМОСТОЯТЕЛЬНО УСТАНАВЛИВАТЬ БЮДЖЕТ</strong>
+
+    section.what_offer.what_offer__p_t_none
+        .wrapper.clr
+            .title ОСОБЕННОСТИ
+            .text_center
+                p <strong>Целевая направленность</strong> — контекстная реклама отвечает на конкретный запрос пользователя и показывается только тем, кто хочет её увидеть
+                p <strong>Быстрые результаты</strong> — она позволяет получить отклики в самые сжатые сроки после запуска кампании;
+                p <strong>«Прозрачная» стоимость</strong> — вы платите только за реальные переходы пользователей с объявлений на ваш сайт.
+                p <strong>Яндекс.Директ</strong> — реклама показывается в поиске Яндекса, на его поисковых партнерах и сайтах в рекламной сети (РСЯ).
+                p <strong>Google AdWords</strong> — реклама показывается в поиске Google, на его поисковых партнерах и сайтах в контекстно-медийной сети (КМС).
+
+    section.what_offer.what_offer__p_t_none.what_offer__grey
+        .wrapper.clr
+            .title ВОЗМОЖНОСТИ РЕКЛАМЫ
+            .text_center
+                p <strong>Настройка геотаргетинга и времени показа.</strong> Можно выбрать определенные регионы для показа рекламы и демонстрировать ее в строго определенное время суток для того, чтобы захватить только ту аудиторию, на которую нацелен товар или услуга.
+                p <strong>Прогнозирование результата.</strong> Рассчитать предполагаемое число посетителей сайта в рамках определенного бюджета либо бюджет для  привлечения конкретного числа пользователей на сайт можно еще до запуска рекламной кампании.
+                p <strong>Оперативная оптимизация.</strong> Оптимизировать и редактировать рекламные объявления можно в режиме реального времени.
+                p <strong>Глубокая web-аналитика.</strong> С ее помощью можно отследить основные показатели эффективности рекламной кампании (конверсия, цена цели, окупаемость инвестиций ROI).
+                p <strong>МОЖЕТ ЛИ КОНТЕКСТНАЯ РЕКЛАМА БЫТЬ ПРИМЕНИМА К ВАШЕМУ БИЗНЕСУ?</strong>
+                p Заказать рекламу в Яндекс Директ и Google AdWords может как молодая компания, так и общепризнанные лидеры рынка. Благодаря своей универсальности она идеально подойдет для любого бизнеса.
+
+    section.copyright_for_what
+        .wrapper.clr
+            .title.title__bg.title__bg_short КАК НАЧАТЬ СОТРУДНИЧЕСТВО С НАМИ И ПРИВЛЕЧЬ НОВЫХ КЛИЕНТОВ
+            ul.copyright_for_what_list
+                each item, index in ['Учимся работать удаленно. Оставляем заявку на сайте или самостоятельно звоним по указанному номеру нам в офис.','Специалисты наших подразделений проанализируют Ваше присутствие в интернете и сформируют наилучшее для Вас предложение по запуску рекламы в интернете.','Ваш персональный менеджер связывается с Вами. Подписание договора. (можно удаленно). Оплата по договору.','Согласование целевой аудитории, регионов, поисковых запросов по которым к вам будут приходить клиенты. Создание сематического ядра.','Запуск рекламной кампании с моментальным эффектом.']
+                    li.copyright_for_what_item.copyright_for_what_item__sm(class='copyright_for_what_item__#{index + 11}')= item
+

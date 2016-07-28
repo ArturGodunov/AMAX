@@ -3,6 +3,12 @@
 */
 .what_offer{
   padding: 60px 0 80px;
+  &.what_offer__grey{
+    background: #f0f0f0;
+  }
+  &.what_offer__p_t_none{
+    padding-top: 0;
+  }
   .panel{
     margin-bottom: 1.6em;
   }
@@ -14,7 +20,6 @@
       margin-top: 1.4em;
     }
   }
-
   strong{
     font-family: roboto_bold, sans-serif;
   }

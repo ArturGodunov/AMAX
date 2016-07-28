@@ -26,6 +26,14 @@
   &.header_main__social{
     background-image: url("../images/bg/bg_social_header.jpg");
   }
+  &.header_main__ad{
+    background-image: url("../images/bg/bg_ad_header.jpg");
+    background-clip: content-box;
+    position: relative;
+    .header_main_text_block{
+      left: 60px;
+    }
+  }
   .wrapper{
     position: relative;
     height: 100%;
