@@ -25,8 +25,15 @@ var app = (function ($) {
             });
         },
 
+        mobileMenu: function () {
+            $('.nav_hamburger').on('click', function () {
+                $(this).toggleClass('active');
+            });
+        },
+
         init: function() {
             app.tabs();
+            app.mobileMenu();
         }
 
     };

@@ -22,22 +22,23 @@
     <link sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon">
     <link sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon">
     <link sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon">
-    <link sizes="192x192" href="/images/favicons/favicon-192x192.png" rel="icon" type="image/png">
-    <link sizes="160x160" href="/images/favicons/favicon-160x160.png" rel="icon" type="image/png">
-    <link sizes="96x96" href="/images/favicons/favicon-96x96.png" rel="icon" type="image/png">
-    <link sizes="16x16" href="/images/favicons/favicon-16x16.png" rel="icon" type="image/png">
-    <link sizes="32x32" href="/images/favicons/favicon-32x32.png" rel="icon" type="image/png">
+    <link sizes="192x192" href="/images/favicons/android-chrome-192x192.png" rel="icon" type="image/png">
+    <!--link(sizes='160x160' href='/images/favicons/android-chrome-160x160.png' rel='icon' type='image/png')-->
+    <link sizes="96x96" href="/images/favicons/android-chrome-96x96.png" rel="icon" type="image/png">
+    <link sizes="16x16" href="/images/favicons/android-chrome-16x16.png" rel="icon" type="image/png">
+    <link sizes="32x32" href="/images/favicons/android-chrome-32x32.png" rel="icon" type="image/png">
     <meta name="msapplication-TileColor" content="#fff">
-    <meta name="msapplication-TileImage" content="/images/favicons/mstile-large.png">
-    <meta name="msapplication-square70x70logo" content="/images/favicons/mstile-small.png">
-    <meta name="msapplication-square150x150logo" content="/images/favicons/mstile-medium.png">
-    <meta name="msapplication-wide310x150logo" content="/images/favicons/mstile-wide.png">
-    <meta name="msapplication-square310x310logo" content="/images/favicons/mstile-large.png">
+    <meta name="msapplication-TileImage" content="/images/favicons/mstile-310x310.png">
+    <meta name="msapplication-square70x70logo" content="/images/favicons/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/images/favicons/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/images/favicons/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/images/favicons/mstile-310x310.png">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="msapplication-tooltip" content="">
-    <title>AMAX</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#f95f00">
+    <title>AMAX | Digital agency</title>
+    <meta name="description" content="Контекстная реклама, продвижение сайтов, реклама в социальных сетях, копирайтинг">
+    <meta name="keywords" content="amax, digital agency, контекстная реклама, продвижение сайтов, реклама в социальных сетях, копирайтинг">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -132,36 +133,42 @@
       <div class="wrapper clr">
         <div class="application_title">ФОРМА ЗАЯВКИ</div>
         <div class="application_text">наши менеджеры свяжутся с Вами в течении рабочео дня</div>
-        <div class="col_6">
-          <input type="text" placeholder="Ваше имя" name="name" class="input">
-          <input type="text" placeholder="Контактный телефон" name="phone" class="input">
-          <input type="text" placeholder="Email" name="email" class="input">
-          <input type="text" placeholder="Адрес вашего сайта (если есть)" name="address" class="input m_b_xl">
-          <label class="label">Реклама в интернете (контекстная реклама)
-            <input type="checkbox" name="checkbox-0" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Продвижение сайта в поисковиках (СЕО)
-            <input type="checkbox" name="checkbox-1" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Реклама в социальных сетях
-            <input type="checkbox" name="checkbox-2" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Продвижение мобильных приложений
-            <input type="checkbox" name="checkbox-3" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Разработка сайта
-            <input type="checkbox" name="checkbox-4" class="checkbox"><span class="checkbox_img"></span></label>
-        </div>
-        <div class="col_6">
-          <textarea placeholder="Ваши возможные пожелания" name="suggestions" class="textarea m_b_xl"></textarea>
-          <label class="label">Разработка мобильного приложения
-            <input type="checkbox" name="checkbox-0" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Разработка ПО
-            <input type="checkbox" name="checkbox-1" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Анализ Вашего сайта/приложения/ПО
-            <input type="checkbox" name="checkbox-2" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Ничего не знаю, хочу чтобы меня видели в интернете
-            <input type="checkbox" name="checkbox-3" class="checkbox"><span class="checkbox_img"></span></label>
-          <label class="label">Работаю с другим агентством, ничего не работает
-            <input type="checkbox" name="checkbox-4" class="checkbox"><span class="checkbox_img"></span></label>
-        </div>
-        <div class="btn btn__bg">ОТПРАВИТЬ</div>
+        <form>
+          <div class="col_6">
+            <input type="text" placeholder="Ваше имя" name="name" class="input">
+            <input type="text" placeholder="Контактный телефон" name="phone" class="input">
+            <input type="text" placeholder="Email" name="email" class="input">
+            <input type="text" placeholder="Адрес вашего сайта (если есть)" name="address" class="input m_b_xl">
+          </div>
+          <div class="col_6">
+            <textarea placeholder="Ваши возможные пожелания" name="suggestions" class="textarea m_b_xl"></textarea>
+          </div>
+          <div class="col_6">
+            <label class="label">Реклама в интернете (контекстная реклама)
+              <input type="checkbox" name="checkbox-0" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Продвижение сайта в поисковиках (СЕО)
+              <input type="checkbox" name="checkbox-1" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Реклама в социальных сетях
+              <input type="checkbox" name="checkbox-2" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Продвижение мобильных приложений
+              <input type="checkbox" name="checkbox-3" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Разработка сайта
+              <input type="checkbox" name="checkbox-4" class="checkbox"><span class="checkbox_img"></span></label>
+          </div>
+          <div class="col_6">
+            <label class="label">Разработка мобильного приложения
+              <input type="checkbox" name="checkbox-0" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Разработка ПО
+              <input type="checkbox" name="checkbox-1" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Анализ Вашего сайта/приложения/ПО
+              <input type="checkbox" name="checkbox-2" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Ничего не знаю, хочу чтобы меня видели в интернете
+              <input type="checkbox" name="checkbox-3" class="checkbox"><span class="checkbox_img"></span></label>
+            <label class="label">Работаю с другим агентством, ничего не работает
+              <input type="checkbox" name="checkbox-4" class="checkbox"><span class="checkbox_img"></span></label>
+          </div>
+          <button type="submit" class="btn btn__bg">ОТПРАВИТЬ</button>
+        </form>
       </div>
     </section>
     <footer class="footer">

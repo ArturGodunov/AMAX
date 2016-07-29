@@ -10,6 +10,16 @@
   }
   .btn{
     margin-top: -4px;
+    @media (max-width: 1200px) {
+      margin-top: 0;
+    }
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -17,6 +27,9 @@
 .logo{
   display: flex;
   float: left;
+  @media (max-width: 1200px) {
+    margin-top: 4px;
+  }
 }
 
 .logo_title{
@@ -40,14 +53,80 @@
 /* NAVIGATION */
 .nav{
   display: inline-block;
+  @media (max-width: 1200px) {
+    float: right;
+    margin: 18px 20px 0 35px;
+  }
 }
 
 .nav_hamburger{
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 16px;
+  padding: 7px 0;
+  background: #111;
+  background-clip: content-box;
+  transition: .3s;
+  position: relative;
+  &:before,
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #111;
+    transition: .3s;
+  }
+  &:before{
+    top: 0;
+  }
+  &:after{
+    bottom: 0;
+  }
+  @media (max-width: 1200px) {
+    display: block;
+    &.active{
+      width: 17px;
+      height: 17px;
+      background-color: transparent;
+      &:before,
+      &:after{
+        width: 22px;
+        border-color: #111;
+      }
+      &:before{
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+      }
+      &:after{
+        transform-origin: 0 100%;
+        transform: rotate(-45deg);
+      }
 
+      & + .nav_list{
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        padding: 5px 20px 6px 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        .nav_item{
+          float: none;
+          line-height: 2;
+        }
+      }
+    }
+  }
 }
 
 .nav_list{
-
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .nav_item{
@@ -67,12 +146,22 @@
   float: left;
   position: relative;
   margin: 8px 20px 0 0;
+  @media (max-width: 1200px) {
+    margin-top: 0;
+  }
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 
 .header_phone_tab_link_block{
   position: absolute;
   right: 0;
   bottom: calc(100% + 5px);
+  @media (max-width: 1200px) {
+    right: calc(100% + 10px);
+    bottom: 0;
+  }
 }
 
 .header_phone_tab_link{
@@ -93,6 +182,12 @@
   }
   & + .header_phone_tab_link{
     margin-left: 5px;
+    @media (max-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 1200px) {
+    line-height: 1.4;
   }
 }
 
@@ -104,6 +199,10 @@
   &.active{
     display: block;
     animation: fadeIn .6s;
+  }
+  @media (max-width: 1200px) {
+    display: block !important;
+    line-height: 1.4;
   }
 }
 /* END PHONE TABS*/
