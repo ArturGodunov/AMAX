@@ -92,7 +92,8 @@ button[disabled]{
 	cursor: default;
 }
 textarea{
-  resize: none;
+  	resize: none;
+	overflow: hidden;
 }
 img{
 	max-width: 100%;

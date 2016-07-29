@@ -18,7 +18,8 @@ module.exports = function(grunt) {
 					'dist/index6.html': 'src/jade/index6.jade',
 					'dist/index7.html': 'src/jade/index7.jade',
 					'dist/index8.html': 'src/jade/index8.jade',
-					'dist/index9.html': 'src/jade/index9.jade'
+					'dist/index9.html': 'src/jade/index9.jade',
+					'dist/thanks.html': 'src/jade/thanks.jade'
 				}
 			}
 		},

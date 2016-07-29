@@ -113,6 +113,7 @@ button[disabled] {
 
 textarea {
   resize: none;
+  overflow: hidden;
 }
 
 img {
@@ -514,6 +515,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   box-shadow: 0 0 5px 1px rgba(249, 95, 0, 0.5);
 }
 
+.input {
+  height: 50px;
+}
 .input + .input {
   margin-top: 20px;
 }

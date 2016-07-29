@@ -1,9 +1,10 @@
 section.application
     .wrapper.clr
         .application_title ФОРМА ЗАЯВКИ
-        .application_text наши менеджеры свяжутся с Вами в течении рабочео дня
-        form
+        .application_text наши менеджеры свяжутся с Вами в течении рабочего дня
+        form(action="https://formspree.io/artur-godunov@mail.ru" method="POST")
             .col_6
+                input(type='hidden' name='_next' value='/thanks.html')
                 input.input(type='text' placeholder='Ваше имя' name='name')
                 input.input(type='text' placeholder='Контактный телефон' name='phone')
                 input.input(type='text' placeholder='Email' name='email')

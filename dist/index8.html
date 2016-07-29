@@ -138,9 +138,10 @@
     <section class="application">
       <div class="wrapper clr">
         <div class="application_title">ФОРМА ЗАЯВКИ</div>
-        <div class="application_text">наши менеджеры свяжутся с Вами в течении рабочео дня</div>
-        <form>
+        <div class="application_text">наши менеджеры свяжутся с Вами в течении рабочего дня</div>
+        <form action="https://formspree.io/artur-godunov@mail.ru" method="POST">
           <div class="col_6">
+            <input type="hidden" name="_next" value="/thanks.html">
             <input type="text" placeholder="Ваше имя" name="name" class="input">
             <input type="text" placeholder="Контактный телефон" name="phone" class="input">
             <input type="text" placeholder="Email" name="email" class="input">
