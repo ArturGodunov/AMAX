@@ -453,8 +453,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   background: #d52b43;
 }
 .btn:active {
-  -ms-transform: scale(0.95);
-      transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
 .btn.btn__md {
   font-size: 16px;
@@ -516,8 +517,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   display: inline-block;
   position: relative;
   left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   padding: 18px 20px;
   font-family: roboto_bold, sans-serif;
   font-size: 30px;
@@ -527,8 +529,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 .panel.panel__left {
   position: static;
-  -ms-transform: translateX(0);
-      transform: translateX(0);
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 .panel .small {
   text-transform: lowercase;
@@ -545,6 +548,14 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 /*
 ** ANIMATION
 */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -659,8 +670,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   position: absolute;
   top: 50%;
   left: 0;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: block;
   width: 25px;
   height: 25px;
@@ -697,8 +709,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .header_top .wrapper {
   position: relative;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .header_top .btn {
   margin-top: -4px;
@@ -722,6 +735,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 
 /* LOGO */
 .logo {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   float: left;
@@ -763,8 +777,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .nav_hamburger {
   display: none;
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 23px;
   height: 16px;
   padding: 7px 0;
@@ -802,16 +817,20 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
     border-color: #111;
   }
   .nav_hamburger.active:before {
-    -ms-transform-origin: 0 0;
-        transform-origin: 0 0;
-    -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .nav_hamburger.active:after {
-    -ms-transform-origin: 0 100%;
-        transform-origin: 0 100%;
-    -ms-transform: rotate(-45deg);
-        transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .nav_hamburger.active + .nav_list {
     display: block;
@@ -914,7 +933,8 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 .header_phone_tab.active {
   display: block;
-  animation: fadeIn .6s;
+  -webkit-animation: fadeIn .6s;
+          animation: fadeIn .6s;
 }
 @media (max-width: 1200px) {
   .header_phone_tab {
@@ -995,8 +1015,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   position: absolute;
   top: 50%;
   left: 30px;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   max-width: 530px;
 }
 .header_main_text_block.header_main_text_block__bg {
@@ -1051,10 +1072,12 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .top_lider_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .top_lider_item {
@@ -1273,8 +1296,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   position: absolute;
   top: 30px;
   left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 40%;
   padding-top: 52%;
   background-repeat: no-repeat;
@@ -1415,10 +1439,12 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .specialist_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-top: 60px;
 }
 
@@ -1469,6 +1495,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .hit_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1557,21 +1584,27 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .packets_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .packets_item {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 31.5%;
   text-align: center;
   border-radius: 4px;
@@ -1634,6 +1667,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .rate_row {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding: 20px 40px 20px 20px;
@@ -1664,10 +1698,12 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .rate_row .rate_col:not(:first-child) {
   padding: 0 5px;
   text-align: center;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .rate_row .rate_col:not(:first-child):before {
   content: '';
@@ -1797,10 +1833,12 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .copyright_for_what_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .copyright_for_what_item {
@@ -1913,21 +1951,27 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .offer_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .offer_item {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 31%;
   background: #fff;
   border-radius: 4px;
@@ -2081,13 +2125,15 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .ok_chess_wrap {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 768px) {
   .ok_chess_wrap {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2117,8 +2163,9 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   }
 }
 .ok_chess_img.ok_chess_img__right {
-  -ms-flex-order: 2;
-      order: 2;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 @media (max-width: 768px) {
   .ok_chess_img {
@@ -2137,16 +2184,19 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 @media (max-width: 768px) {
   .ok_chess_text_block {
     width: 100%;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 20px;
     padding-right: 0 !important;
   }
 }
 
 .ok_chess_title_block {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -2227,23 +2277,28 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .fb_mobile_market_wrap {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 768px) {
   .fb_mobile_market_wrap {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .fb_mobile_market_text_block {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 20px;
 }
 
@@ -2398,10 +2453,12 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .vk_img_text_wrap {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .vk_img_text_col_half {
@@ -2586,23 +2643,28 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 
 .ad_context_market_list {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 768px) {
   .ad_context_market_list {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .ad_context_market_item {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 20px;
   text-align: center;
 }
@@ -2658,12 +2720,15 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 
 .complex_market_list {
   margin-top: 50px;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 768px) {
   .complex_market_list {
