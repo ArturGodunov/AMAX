@@ -4,6 +4,13 @@
 .rate{
   padding: 70px 0 80px;
   background: #f0f0f0;
+  @media (max-width: 1024px) {
+    padding: 35px 0 40px;
+    .wrapper{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
 
 .rate_table{
@@ -25,16 +32,25 @@
         font-size: 17px;
         color: #f95f00;
         line-height: 1.4;
+        @media (max-width: 480px) {
+          font-size: 11px !important;
+        }
       }
       &:first-child{
         font-size: 24px;
         text-transform: uppercase;
       }
+      &:before{
+        display: none !important;
+      }
     }
   }
   .rate_col {
     &:not(:first-child) {
+      padding: 0 5px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
       &:before {
         content: '';
         display: inline-block;
@@ -43,6 +59,11 @@
         background-repeat: no-repeat;
         background-position: 50%;
         background-size: contain;
+        margin: auto;
+        @media (max-width: 768px) {
+          width: 20px;
+          height: 15px;
+        }
       }
       &.rate_col__yes {
         &:before {
@@ -56,6 +77,14 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  @media (max-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .rate_col{
@@ -64,6 +93,9 @@
   font-size: 16px;
   &:first-child{
     width: 40%;
+    @media (max-width: 768px) {
+      width: 28%;
+    }
   }
   &.rate_col__yes{
 
@@ -71,12 +103,36 @@
   &.rate_col__no{
 
   }
+  @media (max-width: 768px) {
+    font-size: 12px !important;
+    width: 23%;
+  }
 }
 
 .rate_btn_wrap{
   position: relative;
   top: 40px;
   margin-top: -10px;
+  @media (max-width: 1024px) {
+    .btn{
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    .btn{
+      font-size: 12px;
+      padding: 8px 10px;
+      text-transform: none;
+    }
+  }
+  @media (max-width: 480px) {
+    top: 20px;
+    .btn {
+      font-size: 11px;
+      padding: 6px 8px;
+    }
+  }
 }
 /*
 ** END RATE

@@ -6,10 +6,16 @@
   .btn{
     margin-right: auto;
   }
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+  }
 }
 
 .fb_mobile_market_wrap{
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .fb_mobile_market_text_block{
@@ -24,7 +30,7 @@
   font-size: 28px;
   line-height: 1.18;
   color: #f95f00;
-  margin-bottom: 0.7em;
+  margin: 1em 0 0.7em;
 }
 
 .fb_mobile_market_text{
@@ -34,9 +40,15 @@
   margin-bottom: 1.1em;
 }
 
+.fb_mobile_market_img_block{
+  width: 45%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .fb_mobile_market_img{
   display: block;
-  width: 30%;
 }
 /*
 ** END FB MOBILE MARKET

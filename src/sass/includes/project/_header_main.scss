@@ -7,12 +7,19 @@
   background-size: cover;
   &.header_main__seo{
     background-image: url("../images/bg/bg_seo_header.jpg");
+    @media (max-width: 768px) {
+      height: 350px;
+    }
   }
   &.header_main__copyright{
     background-image: url("../images/bg/bg_copyright_header.jpg");
   }
   &.header_main__odnoklassniki{
     background-image: url("../images/bg/bg_odnoklassniki_header.jpg");
+    .title__bg_black{
+      line-height: 1.2;
+      font-size: 21px;
+    }
   }
   &.header_main__facebook{
     background-image: url("../images/bg/bg_facebook_header.jpg");
@@ -58,6 +65,10 @@
   &.header_main_text_block__xl{
     max-width: 760px;
   }
+  @media (max-width: 768px) {
+    left: 15px;
+    width: calc(100% - 30px);
+  }
 }
 
 .header_main_text_shadow{
@@ -72,6 +83,9 @@
     font-family: roboto_bold, sans-serif;
     font-size: 21px;
     margin: 10px 0;
+  }
+  @media (max-width: 480px) {
+    line-height: 1.2;
   }
 }
 

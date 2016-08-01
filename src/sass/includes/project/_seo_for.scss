@@ -4,7 +4,15 @@
 .seo_for{
   height: 590px;
   background: url("../images/bg/bg_seo_2.png")no-repeat 50%, #f0f0f0;
-  background-size: 1052px 470px;
+  //background-size: 1052px 470px;
+  background-size: 76% 80%;
+  @media (max-width: 1200px) {
+    padding-top: 42%;
+    height: auto;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 /*
 ** END SOE FOR

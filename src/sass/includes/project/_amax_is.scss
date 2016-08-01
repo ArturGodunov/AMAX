@@ -2,11 +2,16 @@
 ** AMAX IS
 */
 .amax_is{
-  height: 772px;
+  //height: 772px;
+  padding-top: 52%;
   text-align: center;
   position: relative;
   background: url("../images/bg/bg_main_2.png")no-repeat 50%, #f6f6f6;
-  background-size: 1141px 640px;
+  //background-size: 1141px 640px;
+  background-size: 83% 83%;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 //.amax_is_title{

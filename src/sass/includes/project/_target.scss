@@ -7,6 +7,12 @@
   background: url("../images/bg/bg_seo_1.jpg")no-repeat 50%;
   background-size: cover;
   padding-bottom: 80px;
+  .title{
+    line-height: 1.2;
+  }
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+  }
 }
 
 .target_text{

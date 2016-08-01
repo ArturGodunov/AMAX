@@ -4,11 +4,27 @@
 .seo_topic{
   padding: 50px 0 80px;
   background: #f0f0f0;
+  @media (max-width: 1024px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 768px) {
+    .col_6{
+      &:last-child{
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 .seo_topic_list{
   padding-right: 20px;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+    padding-left: 20px;
+  }
+  @media (max-width: 480px) {
+    padding-left: 0;
+  }
 }
 
 .seo_topic_item{
@@ -18,8 +34,8 @@
 }
 
 .seo_topic_img{
-  padding-top: 270px;
-  background: url("../images/main/seo.jpg")no-repeat 50%;
+  padding-top: 47%;
+  background: url("../images/main/seo.jpg")no-repeat 50% 0;
   background-size: contain;
 }
 /*

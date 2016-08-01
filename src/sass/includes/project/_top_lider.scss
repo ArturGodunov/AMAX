@@ -3,14 +3,23 @@
 */
 .top_lider{
   padding-bottom: 80px;
+  @media (max-width: 480px) {
+    padding-bottom: 40px;
+  }
 }
 
 .top_lider_list{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .top_lider_item{
   margin: auto;
+  @media (max-width: 480px) {
+    & + .top_lider_item{
+      margin-top: 10px;
+    }
+  }
 }
 
 .top_lider_link{

@@ -10,10 +10,14 @@
     width: 114px;
     margin: 0 auto;
   }
+  @media (max-width: 768px) {
+    padding-bottom: 40px;
+  }
 }
 
 .packets_list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -35,6 +39,12 @@
   &.packets_item__3{
     background: #5d2e8c;
     color: #fff;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 15px;
+    width: 100%;
+    & + .packets_item{}
+    margin-top: 15px;
   }
 }
 

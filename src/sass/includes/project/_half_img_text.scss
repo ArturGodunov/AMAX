@@ -3,6 +3,9 @@
 */
 .half_img_text{
   padding-top: 60px;
+  @media (max-width: 1024px) {
+    padding-top: 30px;
+  }
 }
 
 .half_img_text_img{

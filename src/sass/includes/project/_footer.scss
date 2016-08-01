@@ -33,6 +33,9 @@
 /* FOOTER MAIN */
 .footer_main{
   padding: 40px 0;
+  @media (max-width: 480px) {
+    padding: 20px 0;
+  }
 }
 
 .footer_title{
@@ -40,6 +43,9 @@
   text-decoration: underline;
   margin-bottom: 1.2em;
   text-transform: uppercase;
+  @media (max-width: 480px) {
+    margin-bottom: 0.6em;
+  }
 }
 
 .footer_list{
