@@ -37,8 +37,14 @@
     background-image: url("../images/bg/bg_ad_header.jpg");
     background-clip: content-box;
     position: relative;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
     .header_main_text_block{
       left: 60px;
+      @media (max-width: 768px) {
+        left: 30px;
+      }
     }
   }
   .wrapper{

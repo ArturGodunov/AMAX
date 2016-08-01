@@ -5,6 +5,9 @@
   background: #f0f0f0;
   padding-bottom: 80px;
   text-align: center;
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+  }
 }
 
 .complex_market_img{
@@ -14,11 +17,21 @@
 .complex_market_list{
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-top: 25px;
+  }
 }
 
 .complex_market_item{
   width: 31%;
+  @media (max-width: 700px) {
+    width: 100%;
+    & + .complex_market_item{
+      margin-top: 15px;
+    }
+  }
 }
 
 .complex_market_item_row{
@@ -26,6 +39,11 @@
   font-size: 15px;
   line-height: 1.53;
   padding: 0.5em 1em;
+  @media (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 5px 8px;
+  }
   &:first-child{
     border-radius: 4px 4px 0 0;
   }
@@ -47,6 +65,13 @@
     .big{
       font-size: 20px;
     }
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 1.2;
+      .big{
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -56,6 +81,9 @@
   font-size: 32px;
   text-transform: uppercase;
   margin: 0.8em 0;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .complex_market_item_desc{
@@ -64,6 +92,9 @@
   font-size: 20px;
   text-transform: uppercase;
   margin: 0 -0.2em 0.8em;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .complex_market_item_cost{
@@ -72,6 +103,9 @@
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 0.6em;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 /*
 ** END COMPLEX MARKET

@@ -324,6 +324,11 @@ body {
   font-size: 35px;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .title.title__bg {
+    font-size: 30px;
+  }
+}
 .title.title__lg {
   font-size: 45px;
   text-transform: uppercase;
@@ -348,6 +353,11 @@ body {
   font-size: 60px;
   text-transform: uppercase;
   margin: 0 0 0.5em;
+}
+@media (max-width: 768px) {
+  .title.title__xxl {
+    font-size: 30px;
+  }
 }
 .title.title__p_sm {
   margin: 2.5em 0 2em;
@@ -960,8 +970,18 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   background-clip: content-box;
   position: relative;
 }
+@media (max-width: 768px) {
+  .header_main.header_main__ad {
+    height: 300px;
+  }
+}
 .header_main.header_main__ad .header_main_text_block {
   left: 60px;
+}
+@media (max-width: 768px) {
+  .header_main.header_main__ad .header_main_text_block {
+    left: 30px;
+  }
 }
 .header_main .wrapper {
   position: relative;
@@ -1840,6 +1860,26 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAMCAYAAAD79EROAAAA1ElEQVRIS82VzQqCUBCF57sL30Jw8BF6q54w+4GyTZHLFoG6CdpGraJFGYKCRoqEV7zry8w3h5lzEEsvTdMpEKtqCDz7aEMfRX7VSJIkyrJsAjxEZA0ExphAVU//9rQO+w0GnEUkyOFFZOn7/r0r/OCwVTDgJSK7HL5QPQLeTfDEcZx1nWyAf1dgkavuOM7cdd1LbbiRwdb0AI4V1cOxKdsIC2zHBtu+Brb2sLSutvrFge1LW/M879B6YEPDVq3LGLNS1VtXBuvWVYTCBpiNNhRsxO0H5Tlttg666pIAAAAASUVORK5CYII=") no-repeat 50%;
   background-size: contain;
 }
+@media (max-width: 1024px) {
+  .copyright_for_what_item.copyright_for_what_item__sm + .copyright_for_what_item__sm:after {
+    width: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .copyright_for_what_item.copyright_for_what_item__sm + .copyright_for_what_item__sm:after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .copyright_for_what_item.copyright_for_what_item__sm {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .copyright_for_what_item.copyright_for_what_item__sm + .copyright_for_what_item__sm {
+    margin-top: 20px;
+  }
+}
 .copyright_for_what_item.copyright_for_what_item__11:before {
   background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iU3ZnanNTdmcxMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iMTEwIiBoZWlnaHQ9IjExMCI+PGRlZnMgaWQ9IlN2Z2pzRGVmczEwMDEiPjwvZGVmcz48cGF0aCBpZD0iU3ZnanNQYXRoMTAwNyIgZD0iTTMwOSA2MDc4QzMwOSA2MTA4LjM4IDI4NC4zOCA2MTMzIDI1NCA2MTMzQzIyMy42MiA2MTMzIDE5OSA2MTA4LjM4IDE5OSA2MDc4QzE5OSA2MDQ3LjYyIDIyMy42MiA2MDIzIDI1NCA2MDIzQzI4NC4zOCA2MDIzIDMwOSA2MDQ3LjYyIDMwOSA2MDc4ICIgZmlsbD0iI2ZhYmMzZCIgZmlsbC1vcGFjaXR5PSIxIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC0xOTksLTYwMjMpIj48L3BhdGg+PHBhdGggaWQ9IlN2Z2pzUGF0aDEwMDgiIGQ9Ik0yNTggNjEwNEMyNTggNjEwNy4zMSAyNTUuMzEgNjExMCAyNTIgNjExMEwyMjggNjExMEMyMjQuNjkgNjExMCAyMjIgNjEwNy4zMSAyMjIgNjEwNEwyMjIgNjA1MkMyMjIgNjA0OC42OSAyMjQuNjkgNjA0NiAyMjggNjA0NkwyNTIgNjA0NkMyNTUuMzEgNjA0NiAyNTggNjA0OC42OSAyNTggNjA1MlogIiBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAwOSIgZD0iTTI1NiA2MDk4TDIyNCA2MDk4TDIyNCA2MDU4TDI1NiA2MDU4WiAiIGZpbGw9IiMzZTNlM2YiIGZpbGwtb3BhY2l0eT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMTk5LC02MDIzKSI+PC9wYXRoPjxwYXRoIGlkPSJTdmdqc1BhdGgxMDEwIiBkPSJNMjM0IDYwNTNDMjM0IDYwNTMuNTUgMjMzLjU1IDYwNTQgMjMzIDYwNTRDMjMyLjQ1IDYwNTQgMjMyIDYwNTMuNTUgMjMyIDYwNTNDMjMyIDYwNTIuNDUgMjMyLjQ1IDYwNTIgMjMzIDYwNTJDMjMzLjU1IDYwNTIgMjM0IDYwNTIuNDUgMjM0IDYwNTMgIiBmaWxsPSIjY2ZkM2Q0IiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxMSIgZD0iTTI0OCA2MDUzQzI0OCA2MDUzLjU1IDI0Ny41NSA2MDU0IDI0NyA2MDU0TDIzNyA2MDU0QzIzNi40NSA2MDU0IDIzNiA2MDUzLjU1IDIzNiA2MDUzQzIzNiA2MDUyLjQ1IDIzNi40NSA2MDUyIDIzNyA2MDUyTDI0NyA2MDUyQzI0Ny41NSA2MDUyIDI0OCA2MDUyLjQ1IDI0OCA2MDUzICIgZmlsbD0iI2NmZDNkNCIgZmlsbC1vcGFjaXR5PSIxIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC0xOTksLTYwMjMpIj48L3BhdGg+PHBhdGggaWQ9IlN2Z2pzUGF0aDEwMTIiIGQ9Ik0yNDQgNjEwNEMyNDQgNjEwNi4yMSAyNDIuMjEgNjEwOCAyNDAgNjEwOEMyMzcuNzkgNjEwOCAyMzYgNjEwNi4yMSAyMzYgNjEwNEMyMzYgNjEwMS43OSAyMzcuNzkgNjEwMCAyNDAgNjEwMEMyNDIuMjEgNjEwMCAyNDQgNjEwMS43OSAyNDQgNjEwNCAiIGZpbGw9IiNjZmQzZDQiIGZpbGwtb3BhY2l0eT0iMSIgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSwtMTk5LC02MDIzKSI+PC9wYXRoPjxwYXRoIGlkPSJTdmdqc1BhdGgxMDEzIiBkPSJNMjQyIDYxMDZMMjM4IDYxMDZMMjM4IDYxMDJMMjQyIDYxMDJaICIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIxIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLC0xOTksLTYwMjMpIj48L3BhdGg+PHBhdGggaWQ9IlN2Z2pzUGF0aDEwMTQiIGQ9Ik0yNTYgNjA2Mi42OEwyNTYgNjA1OEwyMjQgNjA1OEwyMjQgNjA5NC42OFogIiBmaWxsPSIjNWI1YzVmIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxNSIgZD0iTTI2NiA2MDUwQzI1NC45NSA2MDUwIDI0NiA2MDU2LjMyIDI0NiA2MDY0LjEyQzI0NiA2MDY3Ljk0IDI0OC4xNSA2MDcxLjM5IDI1MS42NCA2MDczLjkzTDI0NyA2MDg2TDI1OS4xIDYwNzcuMzZDMjYxLjI2MDAwMDAwMDAwMDA1IDYwNzcuOTIgMjYzLjU3MDAwMDAwMDAwMDA1IDYwNzguMjQgMjY2IDYwNzguMjRDMjc3LjA1IDYwNzguMjQgMjg2IDYwNzEuOTIgMjg2IDYwNjQuMTJDMjg2IDYwNTYuMzIgMjc3LjA1IDYwNTAgMjY2IDYwNTAgIiBmaWxsPSIjZjBmMWYxIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxNiIgZD0iTTI2NiA2MDUwQzI1NC45NSA2MDUwIDI0NiA2MDU2LjMyIDI0NiA2MDY0LjEyQzI0NiA2MDY3Ljk0IDI0OC4xNSA2MDcxLjM5IDI1MS42NCA2MDczLjkzTDI0NyA2MDg2TDI0Ny40MyA2MDg1LjY5TDI3OS40NCA2MDUzLjY3OTk5OTk5OTk5OUMyNzUuODkgNjA1MS40IDI3MS4xOCA2MDQ5Ljk5OTk5OTk5OTk5OSAyNjYgNjA0OS45OTk5OTk5OTk5OTkgIiBmaWxsPSIjZmZmZmZmIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxNyIgZD0iTTI2MCA2MDY0QzI2MCA2MDY1LjExIDI1OS4xMSA2MDY2IDI1OCA2MDY2QzI1Ni45IDYwNjYgMjU2IDYwNjUuMTEgMjU2IDYwNjRDMjU2IDYwNjIuOSAyNTYuOSA2MDYyIDI1OCA2MDYyQzI1OS4xMSA2MDYyIDI2MCA2MDYyLjkgMjYwIDYwNjQgIiBmaWxsPSIjMjFiMmQxIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxOCIgZD0iTTI2OCA2MDY0QzI2OCA2MDY1LjExIDI2Ny4xMSA2MDY2IDI2NiA2MDY2QzI2NC45IDYwNjYgMjY0IDYwNjUuMTEgMjY0IDYwNjRDMjY0IDYwNjIuOSAyNjQuOSA2MDYyIDI2NiA2MDYyQzI2Ny4xMSA2MDYyIDI2OCA2MDYyLjkgMjY4IDYwNjQgIiBmaWxsPSIjMjFiMmQxIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48cGF0aCBpZD0iU3ZnanNQYXRoMTAxOSIgZD0iTTI3NiA2MDY0QzI3NiA2MDY1LjExIDI3NS4xMSA2MDY2IDI3NCA2MDY2QzI3Mi45IDYwNjYgMjcyIDYwNjUuMTEgMjcyIDYwNjRDMjcyIDYwNjIuOSAyNzIuOSA2MDYyIDI3NCA2MDYyQzI3NS4xMSA2MDYyIDI3NiA2MDYyLjkgMjc2IDYwNjQgIiBmaWxsPSIjMjFiMmQxIiBmaWxsLW9wYWNpdHk9IjEiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTE5OSwtNjAyMykiPjwvcGF0aD48L3N2Zz4=");
 }
@@ -2506,6 +2546,11 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .amax_agency .title {
   color: #ff3434;
 }
+@media (max-width: 1024px) {
+  .amax_agency {
+    padding-bottom: 40px;
+  }
+}
 
 .amax_agency_text {
   font-family: roboto_bold, sans-serif;
@@ -2534,10 +2579,21 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   background: #f5f5f5;
   padding-bottom: 80px;
 }
+@media (max-width: 1024px) {
+  .ad_context_market {
+    padding-bottom: 40px;
+  }
+}
 
 .ad_context_market_list {
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 768px) {
+  .ad_context_market_list {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
 }
 
 .ad_context_market_item {
@@ -2549,6 +2605,11 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
       justify-content: space-between;
   padding: 0 20px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .ad_context_market_item + .ad_context_market_item {
+    margin-top: 30px;
+  }
 }
 
 .ad_context_market_item_img {
@@ -2562,10 +2623,20 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   text-transform: uppercase;
   margin-top: 2.5em;
 }
+@media (max-width: 768px) {
+  .ad_context_market_item_text {
+    margin-top: 1em;
+  }
+}
 
 .ad_context_market_item_cost {
   font-family: roboto_black, sans-serif;
   margin-top: 1em;
+}
+@media (max-width: 768px) {
+  .ad_context_market_item_cost {
+    margin-top: 0.8em;
+  }
 }
 
 /*
@@ -2579,17 +2650,37 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   padding-bottom: 80px;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .complex_market {
+    padding-bottom: 40px;
+  }
+}
 
 .complex_market_list {
   margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .complex_market_list {
+    margin-top: 25px;
+  }
 }
 
 .complex_market_item {
   width: 31%;
+}
+@media (max-width: 700px) {
+  .complex_market_item {
+    width: 100%;
+  }
+  .complex_market_item + .complex_market_item {
+    margin-top: 15px;
+  }
 }
 
 .complex_market_item_row {
@@ -2597,6 +2688,13 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   font-size: 15px;
   line-height: 1.53;
   padding: 0.5em 1em;
+}
+@media (max-width: 768px) {
+  .complex_market_item_row {
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 5px 8px;
+  }
 }
 .complex_market_item_row:first-child {
   border-radius: 4px 4px 0 0;
@@ -2620,6 +2718,15 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .complex_market_item_row.complex_market_item_row__orange .big {
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .complex_market_item_row.complex_market_item_row__orange {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .complex_market_item_row.complex_market_item_row__orange .big {
+    font-size: 14px;
+  }
+}
 
 .complex_market_item_title {
   font-family: roboto_bold, sans-serif;
@@ -2627,6 +2734,11 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   font-size: 32px;
   text-transform: uppercase;
   margin: 0.8em 0;
+}
+@media (max-width: 768px) {
+  .complex_market_item_title {
+    font-size: 20px;
+  }
 }
 
 .complex_market_item_desc {
@@ -2636,6 +2748,11 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   text-transform: uppercase;
   margin: 0 -0.2em 0.8em;
 }
+@media (max-width: 768px) {
+  .complex_market_item_desc {
+    font-size: 14px;
+  }
+}
 
 .complex_market_item_cost {
   font-family: roboto_bold, sans-serif;
@@ -2643,6 +2760,11 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 0.6em;
+}
+@media (max-width: 768px) {
+  .complex_market_item_cost {
+    font-size: 14px;
+  }
 }
 
 /*

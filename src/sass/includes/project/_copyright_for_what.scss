@@ -72,6 +72,20 @@
         height: 12px;
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAMCAYAAAD79EROAAAA1ElEQVRIS82VzQqCUBCF57sL30Jw8BF6q54w+4GyTZHLFoG6CdpGraJFGYKCRoqEV7zry8w3h5lzEEsvTdMpEKtqCDz7aEMfRX7VSJIkyrJsAjxEZA0ExphAVU//9rQO+w0GnEUkyOFFZOn7/r0r/OCwVTDgJSK7HL5QPQLeTfDEcZx1nWyAf1dgkavuOM7cdd1LbbiRwdb0AI4V1cOxKdsIC2zHBtu+Brb2sLSutvrFge1LW/M879B6YEPDVq3LGLNS1VtXBuvWVYTCBpiNNhRsxO0H5Tlttg666pIAAAAASUVORK5CYII=")no-repeat 50%;
         background-size: contain;
+        @media (max-width: 1024px) {
+          width: 30px;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.2;
+      & + .copyright_for_what_item__sm{
+        margin-top: 20px;
       }
     }
   }

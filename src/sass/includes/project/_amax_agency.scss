@@ -7,6 +7,9 @@
   .title{
     color: #ff3434;
   }
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+  }
 }
 
 .amax_agency_img{

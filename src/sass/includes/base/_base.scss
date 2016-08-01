@@ -133,6 +133,9 @@ body{
   &.title__bg{
     font-size: 35px;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
   &.title__lg{
     font-size: 45px;
@@ -154,6 +157,9 @@ body{
     font-size: 60px;
     text-transform: uppercase;
     margin: 0 0 0.5em;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
   &.title__p_sm{
     margin: 2.5em 0 2em;
