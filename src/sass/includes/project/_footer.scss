@@ -14,17 +14,17 @@
   strong{
     font-family: roboto_bold, sans-serif;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .wrapper > .col_6 {
+      width: 50%;
+    }
+    .col_6 .col_6 {
       width: 100%;
-      & + .col_6{
-        margin-top: 20px;
-      }
     }
   }
   @media (max-width: 480px) {
     .col_6{
-      width: 100%;
+      width: 100% !important;
       text-align: center;
     }
   }

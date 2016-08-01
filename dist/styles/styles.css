@@ -70,7 +70,7 @@ input,
 textarea {
   border: none;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 input[type=text]:focus,
@@ -600,7 +600,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .input:hover, .input:focus,
 .textarea:hover,
 .textarea:focus {
-  box-shadow: 0 0 5px 1px rgba(249, 95, 0, 0.5);
+  box-shadow: 0 0 5px 1px rgba(249, 95, 0, 0.5) !important;
 }
 
 .input {
@@ -1065,7 +1065,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .top_lider {
   padding-bottom: 80px;
 }
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .top_lider {
     padding-bottom: 40px;
   }
@@ -2269,6 +2269,7 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 }
 .fb_mobile_market .btn {
   margin-right: auto;
+  max-width: 140px;
 }
 @media (max-width: 1024px) {
   .fb_mobile_market {
@@ -2919,17 +2920,17 @@ a:not(.logo).active:before, a:not(.logo):hover:before {
 .footer strong {
   font-family: roboto_bold, sans-serif;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer .wrapper > .col_6 {
-    width: 100%;
+    width: 50%;
   }
-  .footer .wrapper > .col_6 + .col_6 {
-    margin-top: 20px;
+  .footer .col_6 .col_6 {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
   .footer .col_6 {
-    width: 100%;
+    width: 100% !important;
     text-align: center;
   }
 }
