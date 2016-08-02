@@ -54,6 +54,10 @@ body{
   margin: 1.6em 0 1.4em;
   @media (max-width: 768px) {
     margin: 1em 0 0.8em;
+    font-size: 22px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
   }
   &.title__red{
     color: #ff3434;
@@ -129,12 +133,21 @@ body{
     font-size: 25px;
     text-transform: uppercase;
     margin-top: 3.5em;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
   &.title__bg{
     font-size: 35px;
     text-transform: uppercase;
     @media (max-width: 768px) {
-      font-size: 30px;
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
     }
   }
   &.title__lg{
@@ -236,21 +249,42 @@ a:not(.logo){
     text-transform: uppercase;
     padding-top: 14px;
     padding-bottom: 14px;
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   &.btn__lg{
     font-size: 22px;
     text-transform: uppercase;
     padding: 12px 20px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   &.btn__bg{
     font-size: 22px;
     text-transform: uppercase;
     padding: 18px 30px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   &.btn__xl{
     font-size: 26px;
     text-transform: uppercase;
     padding: 20px 30px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
   &.btn__lower{
     text-transform: none;
@@ -301,6 +335,12 @@ a:not(.logo){
   }
   .small{
     text-transform: lowercase;
+  }
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
   }
 }
 /*

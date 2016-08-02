@@ -21,15 +21,33 @@
   font-size: 22px;
   line-height: 1.5;
   margin: 1em 0;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
   .red{
     font-family: roboto_black, sans-serif;
     font-size: 26px;
     color: #ff2b00;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
   &.amax_agency_text__bg{
     font-size: 26px;
     margin-bottom: 1.6em;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 }
 /*
