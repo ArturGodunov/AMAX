@@ -26,7 +26,7 @@
   }
   &:hover,
   &:focus{
-    box-shadow: 0 0 5px 1px transparentize(#f95f00, 0.5) !important;
+    border-color: transparentize(#f95f00, 0.5) !important;
   }
 }
 
@@ -47,6 +47,10 @@
     }
     &:-ms-input-placeholder {
       color: #111;
+    }
+    &:hover,
+    &:focus{
+      border-color: transparentize(#f95f00, 0.5) !important;
     }
   }
 }

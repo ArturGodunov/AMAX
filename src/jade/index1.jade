@@ -26,7 +26,7 @@ html(lang='ru')
                                 li.context_market_item= item
                     .col_6
                         .context_market_img
-                        .btn.btn__lg ЗАКАЗАТЬ
+                        .btn.btn__lg(data-order-link) ЗАКАЗАТЬ
 
             section.seo_topic
                 .wrapper.clr
@@ -37,7 +37,7 @@ html(lang='ru')
                             each item in ['вывод сайта в топ 3 выдачи поисковых систем','рост целевого трафика','привлечение новых клиентов','увеличение продаж','представление компании в глобальной сети','1000 довольных клиентов','увеличение продаж на 30% в течении 3х месяцев']
                                 li.seo_topic_item= item
                         .text_center
-                            .btn.btn__lg ЗАКАЗАТЬ
+                            .btn.btn__lg(data-order-link) ЗАКАЗАТЬ
                     .col_6
                         .seo_topic_img
 
@@ -58,7 +58,7 @@ html(lang='ru')
                             each item in ['Гибкие настройки таргетинга: пол, возраст, страна, хобби, интересы, семейное положение','Возможность привлекать клиента не имея собственного сайта','Минимальные расходы на привлечения клиента']
                                 li.social_market_text_item= item
                     .col_6.text_center
-                        .btn.btn__xl БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                        .btn.btn__xl(data-phone-popup) БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
 
             section.amax_is
                 //.amax_is_title AMAX <span class='small'>ЭТО</span>

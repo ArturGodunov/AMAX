@@ -19,7 +19,8 @@ module.exports = function(grunt) {
 					'dist/index7.html': 'src/jade/index7.jade',
 					'dist/index8.html': 'src/jade/index8.jade',
 					'dist/index9.html': 'src/jade/index9.jade',
-					'dist/thanks.html': 'src/jade/thanks.jade'
+					'dist/thanks.html': 'src/jade/thanks.jade',
+					'dist/phone_popup.html': 'src/jade/phone_popup.jade'
 				}
 			}
 		},

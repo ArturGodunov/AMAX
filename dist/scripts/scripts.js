@@ -4,7 +4,17 @@ var app = (function ($) {
     /** Private properties */
 
     /** Private methods */
+    var showSection;
 
+    /**
+     * Show after scroll
+     * */
+    showSection = function () {
+        var reqSection = $('[data-order]'),
+            reqSectionPos = reqSection.offset().top + 1;
+
+        $('body, html').animate({scrollTop: reqSectionPos}, 500);
+    };
 
     return {
         /**
@@ -39,9 +49,36 @@ var app = (function ($) {
             });
         },
 
+        /**
+         * Scroll to Application
+         * */
+        scrollToSection: function () {
+            $('[data-order-link]').on('click', function (e) {
+                e.preventDefault();
+
+                showSection();
+            });
+        },
+
+        /**
+         * Popup
+         * */
+        openPopup: function() {
+            $('[data-phone-popup]').on('click', function(){
+                $.colorbox({
+                    opacity: 1,
+                    arrowKey: false,
+                    close: '',
+                    href: 'phone_popup.html'
+                });
+            });
+        },
+
         init: function() {
             app.tabs();
             app.mobileMenu();
+            app.scrollToSection();
+            app.openPopup();
         }
 
     };

@@ -1,4 +1,4 @@
-section.application
+section.application(data-order)
     .wrapper.clr
         .application_title ФОРМА ЗАЯВКИ
         .application_text наши менеджеры свяжутся с Вами в течении рабочего дня
@@ -14,11 +14,13 @@ section.application
             .col_6
                 each item, index in ['Реклама в интернете (контекстная реклама)','Продвижение сайта в поисковиках (СЕО)','Реклама в социальных сетях','Продвижение мобильных приложений','Разработка сайта']
                     label.label= item
-                        input.checkbox(type='checkbox' name='checkbox-#{index}')
+                        each val in ['Internet-advertising-(PPC)','Website-promotion-in-search-engines-(SEO)','Advertising-in-social-networks','Promotion-of-mobile-applications','Site-development']
+                            input.checkbox(type='checkbox' name='#{val}')
                         span.checkbox_img
             .col_6
-                each item, index in ['Разработка мобильного приложения','Разработка ПО','Анализ Вашего сайта/приложения/ПО','Ничего не знаю, хочу чтобы меня видели в интернете','Работаю с другим агентством, ничего не работает']
+                each item, index in ['Разработкамобильного приложения','Разработка ПО','Анализ Вашего сайта/приложения/ПО','Ничего не знаю, хочу чтобы меня видели в интернете','Работаю с другим агентством, ничего не работает']
                     label.label= item
-                        input.checkbox(type='checkbox' name='checkbox-#{index}')
+                        each val in ['The-development-of-mobile-applications','Software-development','Analysis-of-your-website/application/software','I-do-not-know-if-I-want-to-be-seen-on-the-Internet','I-work-with-another-agency,nothing-works']
+                            input.checkbox(type='checkbox' name='#{val}')
                         span.checkbox_img
             button.btn.btn__bg(type='submit') ОТПРАВИТЬ

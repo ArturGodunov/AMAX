@@ -6,7 +6,7 @@ block header_main
             .header_main_text_block.header_main_text_block__lg
                 h1.title.title__xl SEO ПРОДВИЖЕНИЕ
                 h3.title.title__lg.title__bg_black БУДЬ ПЕРВЫМ В ПОИСКОВЫХ СИСТЕМАХ GOOGLE И ЯНДЕКС
-                .btn.btn__md ЗАКАЗАТЬ
+                .btn.btn__md(data-order-link) ЗАКАЗАТЬ
 
 block content
     section.hit
@@ -82,7 +82,7 @@ block content
                         else
                             .rate_col(class='rate_col__#{item}')
                                 .rate_btn_wrap
-                                    .btn.btn__lg Заказать
+                                    .btn.btn__lg(data-order-link) Заказать
 
     section.target
         .wrapper.clr
