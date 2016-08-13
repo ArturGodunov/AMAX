@@ -9,9 +9,9 @@ block header
                 nav.nav
                     .nav_hamburger
                     ul.nav_list.clr
-                        each item in ['Контекстная реклама', 'Продвижение сайтов', 'Реклама в социальных сетях', 'Копирайтинг']
+                        each item in [['Контекстная реклама','index9.html'],['Продвижение сайтов','index2.html'],['Реклама в социальных сетях','index8.html'],['Копирайтинг','index3.html']]
                             li.nav_item
-                                a.nav_link(href='')= item
+                                a.nav_link(href=item[1])= item[0]
 
                 .pull_right
                     .header_phone_tabs(data-tab-wrap)

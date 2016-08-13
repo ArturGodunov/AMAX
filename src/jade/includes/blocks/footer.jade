@@ -5,14 +5,14 @@ footer.footer
                 .footer_title НАШИ УСЛУГИ
                 .col_6
                     ul.footer_list
-                        each item in ['Контекстная реклама','Продвижение сайтов','Копирайтинг','Реклама в социальных сетях']
+                        each item in [['Контекстная реклама','index9.html'],['Продвижение сайтов','index2.html'],['Копирайтинг','index3.html'],['Реклама в социальных сетях','index8.html']]
                             li.footer_item
-                                a.footer_link(href='')= item
+                                a.footer_link(href=item[1])= item[0]
                 .col_6
                     ul.footer_list
-                        each item in ['Реклама в Instagram','Реклама в Facebook','Реклама в Вконтакте','Реклама в Одноклассниках']
+                        each item in [['Реклама в Instagram','index7.html'],['Реклама в Facebook','index5.html'],['Реклама в Вконтакте','index6.html'],['Реклама в Одноклассниках','index4.html']]
                             li.footer_item
-                                a.footer_link(href='')= item
+                                a.footer_link(href=item[1])= item[0]
             .col_6
                 .footer_title НАШИ КОНТАКТЫ
                 .col_6
