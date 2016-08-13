@@ -8,20 +8,13 @@ module.exports = function(grunt) {
 						debug: false
 					}
 				},
-				files: {
-					'dist/index.html': 'src/jade/index.jade',
-					'dist/index1.html': 'src/jade/index1.jade',
-					'dist/index2.html': 'src/jade/index2.jade',
-					'dist/index3.html': 'src/jade/index3.jade',
-					'dist/index4.html': 'src/jade/index4.jade',
-					'dist/index5.html': 'src/jade/index5.jade',
-					'dist/index6.html': 'src/jade/index6.jade',
-					'dist/index7.html': 'src/jade/index7.jade',
-					'dist/index8.html': 'src/jade/index8.jade',
-					'dist/index9.html': 'src/jade/index9.jade',
-					'dist/thanks.html': 'src/jade/thanks.jade',
-					'dist/phone_popup.html': 'src/jade/phone_popup.jade'
-				}
+				files: [{
+					expand: true,
+					cwd: 'src/jade',
+					src: ['**/*.jade', '!includes/**/*.*'],
+					dest: 'dist/',
+					ext: '.html'
+				}]
 			}
 		},
 
