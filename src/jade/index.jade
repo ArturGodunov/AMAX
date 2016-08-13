@@ -45,12 +45,12 @@ html(lang='ru')
                 .wrapper.clr
                     h2.title.title__bg РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ
                     ul.social_market_list.clr
-                        each item in [['instagram','5 млн чел в день<br>от 1 500 000 бел.руб'],['vkontakte','2 млн чел в день<br>от 2 000 000 бел.руб'],['facebook','2 млн чел в день<br>от 2 000 000 бел.руб'],['odnoklassniki','2 млн чел в день<br>от 2 000 000 бел.руб']]
+                        each item in [['instagram','5 млн чел в день<br>от 1 500 000 бел.руб','index7.html'],['vkontakte','2 млн чел в день<br>от 2 000 000 бел.руб','index6.html'],['facebook','2 млн чел в день<br>от 2 000 000 бел.руб','index5.html'],['odnoklassniki','2 млн чел в день<br>от 2 000 000 бел.руб','index4.html']]
                             li.social_market_item_wrap
                                 .social_market_item(class='social_market_item__#{item[0]}')
                                     .social_market_item_title= item[0]
                                     .social_market_item_text !{item[1]}
-                                    .btn.btn__md.btn__lower Подробнее
+                                    a.btn.btn__md.btn__lower(href=item[2]) Подробнее
                     .social_market_text.text_center ОБЩЕЕ КОЛИЧЕСТВО ВАШИХ ПОТЕНЦИАЛЬНЫХ КЛИЕНТОВ В СОЦСЕТЯХ – <span class='small'>более 2 000 000 000 чел.</span>
                     .col_6
                         .social_market_text РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ <span class='small'>от</span> AMAX <span class='small'>digital это</span>

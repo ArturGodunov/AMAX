@@ -2,7 +2,7 @@ section.application(data-order)
     .wrapper.clr
         .application_title ФОРМА ЗАЯВКИ
         .application_text наши менеджеры свяжутся с Вами в течении рабочего дня
-        form(action="https://formspree.io/artur-godunov@mail.ru" method="POST")
+        form(action="https://formspree.io/info.amax.by" method="POST")
             .col_6
                 input(type='hidden' name='_next' value='/thanks.html')
                 input.input(type='text' placeholder='Ваше имя' name='name')
@@ -12,15 +12,13 @@ section.application(data-order)
             .col_6
                 textarea.textarea.m_b_xl(placeholder='Ваши возможные пожелания' name='suggestions')
             .col_6
-                each item, index in ['Реклама в интернете (контекстная реклама)','Продвижение сайта в поисковиках (СЕО)','Реклама в социальных сетях','Продвижение мобильных приложений','Разработка сайта']
-                    label.label= item
-                        each val in ['Internet-advertising-(PPC)','Website-promotion-in-search-engines-(SEO)','Advertising-in-social-networks','Promotion-of-mobile-applications','Site-development']
-                            input.checkbox(type='checkbox' name='#{val}')
+                each item in [['Реклама в интернете (контекстная реклама)','Internet-advertising-(PPC)'],['Продвижение сайта в поисковиках (СЕО)','Website-promotion-in-search-engines-(SEO)'],['Реклама в социальных сетях','Advertising-in-social-networks'],['Продвижение мобильных приложений','Promotion-of-mobile-applications'],['Разработка сайта','Site-development']]
+                    label.label= item[0]
+                        input.checkbox(type='checkbox' name=item[1])
                         span.checkbox_img
             .col_6
-                each item, index in ['Разработкамобильного приложения','Разработка ПО','Анализ Вашего сайта/приложения/ПО','Ничего не знаю, хочу чтобы меня видели в интернете','Работаю с другим агентством, ничего не работает']
-                    label.label= item
-                        each val in ['The-development-of-mobile-applications','Software-development','Analysis-of-your-website/application/software','I-do-not-know-if-I-want-to-be-seen-on-the-Internet','I-work-with-another-agency,nothing-works']
-                            input.checkbox(type='checkbox' name='#{val}')
+                each item in [['Разработкамобильного приложения','The-development-of-mobile-applications'],['Разработка ПО','Software-development'],['Анализ Вашего сайта/приложения/ПО','Analysis-of-your-website/application/software'],['Ничего не знаю, хочу чтобы меня видели в интернете','I-do-not-know-if-I-want-to-be-seen-on-the-Internet'],['Работаю с другим агентством, ничего не работает','I-work-with-another-agency,nothing-works']]
+                    label.label= item[0]
+                        input.checkbox(type='checkbox' name=item[1])
                         span.checkbox_img
             button.btn.btn__bg(type='submit') ОТПРАВИТЬ

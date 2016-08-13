@@ -23,6 +23,9 @@
     }
   }
   @media (max-width: 480px) {
+    .wrapper > .col_6:last-child {
+      margin-top: 10px;
+    }
     .col_6{
       width: 100% !important;
       text-align: center;

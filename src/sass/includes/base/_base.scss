@@ -223,7 +223,7 @@ body{
   max-width: 50%;
 }
 
-a:not(.logo){
+a:not(.logo):not(.btn){
   @include hover_pseudo_border(#f95f00);
 }
 

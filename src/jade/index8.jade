@@ -14,12 +14,12 @@ block content
         .wrapper.clr
             h2.title.title__sm.title__p_sm РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ
             ul.social_market_list.clr
-                each item in [['instagram','5 млн чел в день<br>от 1 500 000 бел.руб'],['vkontakte','2 млн чел в день<br>от 2 000 000 бел.руб'],['facebook','2 млн чел в день<br>от 2 000 000 бел.руб'],['odnoklassniki','2 млн чел в день<br>от 2 000 000 бел.руб']]
+                each item in [['instagram','5 млн чел в день<br>от 1 500 000 бел.руб','index7.html'],['vkontakte','2 млн чел в день<br>от 2 000 000 бел.руб','index6.html'],['facebook','2 млн чел в день<br>от 2 000 000 бел.руб','index5.html'],['odnoklassniki','2 млн чел в день<br>от 2 000 000 бел.руб','index4.html']]
                     li.social_market_item_wrap
                         .social_market_item.social_market_item__pink(class='social_market_item__#{item[0]}')
                             .social_market_item_title.social_market_item_title__capitalize= item[0]
                             .social_market_item_text.social_market_item_text__sm !{item[1]}
-                            .btn.btn__md.btn__lower Подробнее
+                            a.btn.btn__md.btn__lower(href=item[2]) Подробнее
 
     section.specialist
         .wrapper
