@@ -37,7 +37,7 @@ block content
                     li.packets_item(class='packets_item__#{index + 1}')
                         .packets_item_title= item[0]
                         .packets_item_text !{item[1]}
-                        .btn.btn__md.btn__lower Подробнее
+                        //.btn.btn__md.btn__lower Подробнее
 
     section.rate
         .wrapper
@@ -88,5 +88,5 @@ block content
         .wrapper.clr
             .title.title__sm ВАШ БИЗНЕС ИМЕЕТ ЦЕЛИ, МЫ ПОМОЖЕМ ИХ ВАМ ДОСТИЧЬ.
             .target_text УВЕЛИЧЕНИЕ ТРАФИКА, УЛУЧШЕНИЕ РЕЙТИНГА В ПОИСКОВЫХ СИСТЕМАХ, ВЫСОКИЕ ПОКАЗАТЕЛИ КОЭФФИЦИЕНТА КОНВЕРСИИ. НАША КОМАНДА ИМЕЕТ БОЛЬШОЙ ОПЫТ И НЕОБХОДИМЫЕ ИНСТРУМЕНТЫ , ЧТОБЫ СДЕЛАТЬ ЭТО ДЛЯ ВАС.
-            .btn.btn__lg НАЧАТЬ СЕЙЧАС
+            .btn.btn__lg(data-order-link) НАЧАТЬ СЕЙЧАС
 
